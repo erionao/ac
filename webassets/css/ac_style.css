@@ -1,0 +1,277 @@
+/*.top-menu .navbar-nav li a {
+    border-bottom-width: 4px !important;
+}
+*/
+
+
+.stafi-container .doctors-item .doctors-item-container{
+	min-height: 325px !important;
+}
+
+.analizat{
+	padding-bottom: 30px;
+}
+.video-news{
+	padding-bottom: 100px;
+}
+.footer{
+	text-align: left;
+}
+
+
+#next-blog:hover, #prev-blog:hover{
+	background-color: #b23594 !important;
+}
+
+.doktorat{
+	    padding: 80px 0px 15px 0px !important;
+}
+
+#ac_news{
+	    padding-bottom: 100px;
+}
+
+#next-doctors:hover, #prev-doctors:hover{
+	background-color: #b23594 !important;
+}
+
+/*.doctors-item img{
+	height: 240px;
+}
+*/
+.news-image img{
+	
+	    min-width: 100% !important;
+	        max-width: 120% !important;
+}
+
+.news-image{
+    height: 225px;
+    width: 360px !important;
+
+}
+
+
+.data{
+	right: 0 !important;
+	bottom: 0 !important;
+}
+
+#prp-paragraph{
+	color:#b23594;
+	 text-shadow: none !important;
+}
+.gallery{
+	padding: 0 0 60px;
+}
+.gallery-1-items{
+	margin-top: 70px;
+}
+.service-icon img{
+	height: 100px !important;
+}
+.arp-image-slider{
+	    margin-top: -280px;
+}
+.btn-me-shume{
+	background: #b23594 !important;
+    color: #fff;
+    border: none;
+    border-radius: 0 !important;
+    transition: all 300ms;
+    font-size: 14px !important;
+}
+.header {
+margin-bottom: 37px !important;
+}
+.slider-button{
+	    top: 265px !important;
+}
+
+.top-menu ul.dropdown-menu li a:before {
+background-color: #b23594 !important; 
+}
+
+.dropdown-menu li a:hover{
+color: #b23594 !important; 	
+}
+
+.sp-image-container img{
+        filter: brightness(90%) ;
+}
+.header-logo img {
+    height: 90px !important;
+    top: -26px !important;
+}
+
+.doctors-2{
+	padding-bottom: 0;
+}
+
+.top-menu ul.dropdown-menu {
+    border-top: 4px solid #b23594 !important;
+	}
+.staff-img{
+	width: 100%;
+}
+.doctors-text{
+	padding: 0;
+}
+
+.doctors-img-container{
+	padding: 0;
+}
+
+.btn-view{
+	background: #b23594;
+}
+.btn-view:hover{
+	background: #b23594;
+}
+
+.bookform-left{
+	float: right;
+	background: white;
+	    height: 100%;
+}
+.doctor-info-header{
+	font-size: 26px;
+	color: #b23594;
+}
+.doc-profession{
+	font-size: 14px;
+	color: #4c7284;
+	margin-top: 3px;
+}
+.doctor-info-name{
+color: #b23594;
+}
+.bookform-right{
+	background: white;
+	height: 100%;
+}
+.doc-info-close{
+	float: right;
+}
+.staff-header-title{
+	text-align: center;
+    padding-top: 17%;
+    color: white;
+    text-transform: uppercase;
+ text-shadow: 0 0 10px #3b3b3b;
+}
+.staff-header-title span{
+	font-weight: bold;
+}
+.news-img-date{
+	background: #b23594 !important;
+}
+.titulli {
+	text-align: left;
+	font-size: 40px;
+}
+
+.news-titulli{
+	text-align: center;
+	font-size: 40px;
+}
+
+.news-nentitulli{
+	text-align: left;
+	font-size: 15px;
+	margin-bottom: 10px !important;
+}
+
+.text-shadow{
+	text-shadow: 0 0 10px #3b3b3b !important;
+
+}
+
+.doctor-b{
+	float: right;
+}
+
+@media (max-width: 768px) {
+
+.doctors-2 div div .qs-text{
+	padding: 0px 15px;
+}
+
+.header-logo a img{
+	    width: 100% !important;
+}
+
+.stafi-container .doctors-item .doctors-item-container{
+	min-height: 100% !important;
+}
+
+.news-image{
+	    width: 100% !important;
+}
+
+.doctor-b{
+	float: none;
+	margin: 0 auto;
+	display: table;
+}
+
+#next-blog, #prev-blog{
+	top:25%;
+}
+
+#next-doctors, #prev-doctors{
+	top:45%;
+}
+
+
+.gallery-1-items {
+    margin-top: 50px !important;
+    }
+ .news-titulli{
+	font-size: 24px;
+}
+.doctors-item img{
+	height: auto;
+}
+
+}
+
+@media screen and (max-width: 691px) {
+ .staff-header-title{font-size: 20px;text-align: left;}
+ .qs-text{font-size: 12px !important;}
+ .staff-header{display: none;}
+}
+@media screen and (max-width: 873px) {
+.fancybox-wrap .fancybox-desktop .fancybox-type-inline .fancybox-opened{
+	width: 520px;
+}
+.fancybox-inner{width: 100%;}
+.bookform-right{display: none;}
+}
+
+.qs-text{
+	font-size: 15px;
+    font-weight: normal;
+    color: #4c7284;
+    margin-bottom: 60px;
+        text-align: left;
+            line-height: 1.5;
+}
+.fancybox-inner{
+	height: 100% !important;
+	background: white;
+}
+
+.doctor-info{
+	padding-top: 50px;
+    padding-left: 20px;
+}
+.fancybox-close-btn{
+	right: -44px;
+}
+  }
+
+/*# sourceMappingURL=ac_style.css.map */
+
+
+/*# sourceMappingURL=ac_style.css.map */
