@@ -32,7 +32,7 @@
 <body data-spy="scroll" data-target=".navbar">
 
 <div class="preloader" id="preloader">
-    <img src="images/preloader.gif" alt="" />
+    <img src="{{URL::to('webassets/images/preloader.gif')}}" alt="" />
 </div>
 
 <!-- =========================
@@ -67,7 +67,7 @@
             <!-- HEADER LOGO -->
             <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
                 <div class="header-logo">
-                    <a href="index.php"><img src="icons/ac_1.svg" alt="" />
+                    <a href="index.php"><img src="{{URL::to('webassets/icons/ac_1.svg')}}" alt="" />
                         <span class="bold600 color-child-6"></span><span class="color-child-5"></span>
                     </a>
                 </div>
@@ -75,7 +75,7 @@
 
 
             <div class="doctor-b">
-                <img src="icons/ac_2.svg" alt="">
+                <img src="{{URL::to('webassets/icons/ac_2.svg')}}" alt="">
             </div>
 
             <!-- HEADER BUTTONS -->
@@ -799,7 +799,7 @@
                     <!-- BLOG ITEM -->
                     <div class="blog-item news-item">
                         <div class="blog-item-image news-image">
-                            <img src="images/news/american-clinic.png" alt="" />
+                            <img src="{{URL::to('webassets/images/news/american-clinic.png')}}" alt="" />
                             <div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 08.03.2017</div>
                             <!--  <div class="blog-item-comments"><i class="fa fa-comments-o"></i> 7</div> -->
                         </div>
@@ -811,7 +811,7 @@
 
                     <div class="blog-item news-item">
                         <div class="blog-item-image news-image">
-                            <img src="images/news/n_k.png" alt="" />
+                            <img src="{{URL::to('webassets/images/news/n_k.png')}}" alt="" />
                             <div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 25.03.2017</div>
 
                         </div>
@@ -826,7 +826,7 @@
                     <!-- BLOG ITEM -->
                     <div class="blog-item news-item">
                         <div class="blog-item-image news-image">
-                            <img src="images/news/news_1.jpg" alt="" />
+                            <img src="{{URL::to('webassets/images/news/news_1.jpg')}}" alt="" />
                             <div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 12.03.2017</div>
                             <!--          <div class="blog-item-comments"><i class="fa fa-comments-o"></i> 12</div> -->
                         </div>
@@ -841,7 +841,7 @@
                     <!-- BLOG ITEM -->
                     <div class="blog-item news-item">
                         <div class="blog-item-image news-image">
-                            <img src="images/news/news_2.jpg" alt="" />
+                            <img src="{{URL::to('webassets/images/news/news_2.jpg')}}" alt="" />
                             <div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 14.03.2017</div>
                             <!--   <div class="blog-item-comments"><i class="fa fa-comments-o"></i> 7</div> -->
                         </div>
