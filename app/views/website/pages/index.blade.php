@@ -113,12 +113,12 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" href="#">SHËRBIMET</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="art.php">ART</a></li>
-                            <li><a href="lindjet.php">Lindjet</a></li>
-                            <li><a href="gjinekologjia.php">Gjinekologjia</a></li>
-                            <li><a href="dermatologjia.php">Dermatologjia</a></li>
-                            <li><a href="neonatologjia.php">Neonatologjia</a></li>
-                            <li><a href="laboratori.php">Laboratori Biokimik</a></li>
+                            <li><a href="{{ url('/art') }}">ART</a></li>
+                            <li><a href="{{ url('/lindjet') }}">Lindjet</a></li>
+                            <li><a href="{{ url('/gjinekologjia') }}">Gjinekologjia</a></li>
+                            <li><a href="{{ url('/dermatologjia') }}">Dermatologjia</a></li>
+                            <li><a href="{{ url('/neonatologjia') }}">Neonatologjia</a></li>
+                            <li><a href="{{ url('/laboratori') }}">Laboratori Biokimik</a></li>
                             <!--  <li><a href="services.html">X-rays</a></li>
                              <li><a href="services.html">Crowns</a></li>
                              <li><a href="services.html">Fillings and bridges</a></li>
@@ -129,7 +129,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="doctors.php">STAFI</a>
+                        <a href="{{ url('/doctors') }}">STAFI</a>
                         <!-- <ul class="dropdown-menu" role="menu">
 							<li><a href="doctors.html">Our doctors</a></li>
                             <li><a href="doctor.html">Doctor</a></li>
@@ -147,7 +147,7 @@
                          </ul> -->
                     </li>
                     <li class="dropdown">
-                        <a href="gallery.php">GALERIA</a>
+                        <a href="{{ url('/gallery') }}">GALERIA</a>
                         <!--  <ul class="dropdown-menu" role="menu">
                              <li><a href="gallery1.html">Gallery 1</a></li>
                              <li><a href="gallery2.html">Gallery 2</a></li>

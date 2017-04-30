@@ -71,10 +71,10 @@
 
             <!-- HEADER BUTTONS -->
 
+
             <div class="doctor-b">
                 <img src="{{URL::to('webassets/icons/ac_2.svg')}}" alt="">
             </div>
-
 
         </div>
     </div>
@@ -103,8 +103,8 @@
                     </div>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/') }}" class="active">BALLINA</a></li>
-                    <li class=" active"><a href="{{ url('/about') }}">PËR KLINIKËN</a></li>
+                    <li class="active"><a href="{{ url('/') }}" class="active">BALLINA</a></li>
+                    <li><a href="{{ url('/about') }}">PËR KLINIKËN</a></li>
                     <li class="dropdown">
                         <a data-toggle="dropdown" href="#">SHËRBIMET</a>
                         <ul class="dropdown-menu" role="menu">
@@ -126,12 +126,12 @@
                     <li class="dropdown">
                         <a href="{{ url('/doctors') }}">STAFI</a>
                         <!-- <ul class="dropdown-menu" role="menu">
-                            <li><a href="doctors.html">Our doctors</a></li>
+							<li><a href="doctors.html">Our doctors</a></li>
                             <li><a href="doctor.html">Doctor</a></li>
                         </ul> -->
                     </li>
                     <li class="dropdown">
-                        <a href="{{ url('/') }}#ac_news">LAJMET E FUNDIT</a>
+                        <a id="latest_news" href="#">LAJMET E FUNDIT</a>
                         <!--  <ul class="dropdown-menu" role="menu">
                              <li><a href="blog1.html">Right sidebar</a></li>
                              <li><a href="blog2.html">Left sidebar</a></li>
@@ -172,7 +172,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header">
 
                 <!--   <h1 class="sp-layer col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header-title">we have <span>well trained staff</span> and <span>qualified</span></h1> -->
-                <img class="staff-img" src="{{URL::to('webassets/images/about.png')}}">
+                <img class="staff-img" src="{{URL::to('webassets/images/services/dermatologjia.png')}}">
 
 
             </div>
@@ -188,24 +188,47 @@
         <div class="row">
             <div class="col-md-2">   </div>
             <div class="col-md-8">
-                <h2 class="section-title titulli">Për <span class="bold700">klinikën</span></h2>
+                <h2 class="section-title titulli"><span class="bold700">Dermatologjia</span></h2>
                 <h3 class="qs-text">
 
-                    Që nga viti 1996 nën udhëheqjen e Dr. Spec. Behar Kusari dhe përmes trajnimeve të stafit e zhvillimit të teknologjisë të paisur me aparaturën më të sofistikuar, jemi të përkushtuar të ju ndimojmë në sfidat e reja jetësore. Në fillim me trajtimin e infertilitetit femëror dhe mashkullor e tani edhe me trajtimet e dermatologjisë, me repartin e neonatologjisë bllokun operativ dhe bllokun e lindjeve. <br><br>
+                    Të dukeni mirë ju ndihmonë të ndjeheni mirë. <br>
 
-                    Njësia e reprodukimit të asistuar përmban hapësira luksoze dekorative të pritjes, salla operative dhe laboratore bashkëkohore embriologjike dhe andrologjike. <br><br>
+                    Një lëkurë e shëndoshë përveç qëreflekton bukurinë dhe personalitetin e njeriut tregon edhe shëndetin e përgjithshëm. Ne, në American Clinic së bashku me stafin e kualifikuar nën mbikqyrjen e Dr. Spec. Nexhmije Kusari i japim rëndësi të veçantë shëndetit të lëkurës tuaj. Me paisjet më moderne në repartin e dermatologjisë ju do të gjeni vendin e duhur profesional për trajtimin e lëkurës tuaj. <br> <br>
+                    Tani ne American Clinic bëhet trajtimi i lëkurës me tretmanin inovativ biostimultativ PRP (Platelet Rich Plasma) përmes plazmës së gjakut të pasuruar me proteina. <br>
+                    Stafi ynë është i trajnuar me standardet më të larta profesionale dhe etike që të ju shërbejnë me trajtime të ndryshme të lëkurës që nga Trajtimi Klasikë e deri tek Mezoterapia.
+                    <br>
+                    Lëkuara është një nga pasuritë tuaja dhe ju duhet të kujdeseni për të. <br><br>
 
-                    Përkujdesja jonë profesionale e bënë American Clinic qendër të përkryer për shëndetin e femrës, me një ekip mjekësor vendor të udhëhequr nga Dr. Behar Kusari - Specialist Gjinekolog Obstetër- fertilarts si dhe në bashkëpunim me mjekë specialist ndërkombëtar. Stafi vendor dhe ai ndërkombëtar i American Clinic janë të specializuar në këtë lëmi, me një bagazh të arriturash që nga viti 1996. Njësia e udhëhequr nga Dr. spec. Behar Kusari funksionon si një ekip me përvojë i përbërë nga 2 gjinekolog , 2 embriolog, 2 teknik të embriologjisë dhe 1 androlog. Ndërsa personeli përkrahës përbëhet nga gjenetist, motrat medicinale të trajnuara me standarde të larta etike dhe profesionale shëndetësore. <br><br>
-
-                    Më 8 mars 2017, në dhjetë vjetorin e hapjes së klinkës për infertilitet dhe gjinekologji, i përuruam hapësirat e reja të spitalit special për gjinekologji, obstetrikë dhe infertilitet. Me një hapësirë të rehatshme dhe luksoze tani spitali special është i paisur me teknologjinë më moderne të sallave të lindjes dhe bllokut operativ për ndërhyrje të lindjeve me prerje cezariane. <br><br>
-
-                    Përveç kujdesit ndaj pacientëve ekipi i reprodukimit të asistuar të American Clinic është shumë aktiv në hulumtimet shkencore të publikuara në revistat shkencore me renome botërore. <br><br>
-
-                    Klinicistët, embriologët dhe stafi ynë është pjesëmarrës aktiv në kongrese dhe simpoziume shkencore Evropiane dhe Botërore. <br><br>
-
-                    American Clinic nuk na përket vetëm neve por edhe qindra bashkëshortëve që nuk kanë përjetuar ngrohtësinë e butë të frymëmarrjes së fëmijëve, krenarinë e shpirtit prindëror. Ne përpiqemi t'ua krijojmë qëllimin e jetës tuaj.
-
-
+                    <b>TRAJTIMI KLASIK</b> <br>
+                    Pastrimi, pillingu, masazha dhe maska.
+                    <br><br>
+                    <b>HYDRADEMIJA</b> <br>
+                    Trajtim ekskluziv me rrymë galvanike. Trajtim për të gjitha llojet e lëkurës, si dhe te gjitha moshat.
+                    Trajtimi kryhehet në pesë faza , me produkte dhe teknolologji GUINOT INSTITUT PARIS.
+                    <br><br>
+                    <b>HYDRACLIN</b> <br>
+                    Tretman për pastrim të lëkurës me anë të elektrodës për shpërndarje të nxehtësisë, ku bëhet pastrami më i thellë dhe eliminimi i toksineve nga lëkura.
+                    <br><br>
+                    <b>HYDRADERMIA LIFT</b> <br>
+                    Trajtim për konturim dhe lifting të lëkurës, ku përms elektrostimulimit të muskujve të lëkurës i japim pamje të re me lift efekt dhe konturim. <br><br>
+                    <b>TECHNISPA</b><br>
+                    Është metodë dhe aparaturë shumë efikase për eliminimin e celulitit dhe formësimin e trupit.
+                    Aparati ka tri funksione: thyerjen e celulitit me vakum, ryma galvanike bënë që gelli kundër celulitit të depertojë thellë në lëkurë, elektrostimulimi bënë kontraktimin e muskujve, tonifikimin e lëkurës dhe formësimin e trupit.
+                    <br><br>
+                    <b>PILLING KIMIK</b> <br>
+                    Pillingu kimik është shumë i preferuar për të gjitha problemet e lëkurës dhe llojet e lëkurës.
+                    Përbërës  të ndryshëm kimik depërtojnë në thellësi të ndryshme të lëkurës dhe japin rrezultate të duhura.
+                    <br><br>
+                    <b>MEZOTERAPIJA</b> <br>
+                    Metodë e re, për aplikimin e kokteleve të ndryshme të vitaminave apo aminoacideve, si dhe substancave tjera në shtresat e mesme apo të thella të lëkurës. Koktelet e ndryshme mund të aplikohen në lëkurë me anë të injektimeve të vogla apo me dermapen. Preferohen 4 apo 5 tretmane njëra pas tjetrës.
+                    <br><br>
+                    <b>PRP </b> <br>
+                    PRP (Platelet Rich Plasma) plazma e pasuruar me proteina, është tretman biostimulativ inovativ. Bazohet në vetitë regjenerative dhe stimuluese të trombociteve. Në vendin e aplikimit ndikon në faktorët e rritjes të cilët e inicojnë procesin e regjenerimit të lëkurës. Përparësia e veçantë e këtij tretmani është se trombocitet dhe plazma e gjakut merren nga gjaku i vet pacientit dhe reaksionet e pa dëshiruara janë minimale që e bënë tërësisht natyrale.
+                    <br><br>
+                    Me këtë tretman përmiresohet tekstura dhe kualiteti i lëkurës me lëkurë që shkëlqen, minimizim i rrudhave dhe rrathët e zi rreth syve janë më pak të dukshëm. Rezultatet efektive dhe të dukshme arrihen edhe tek strijat, shenjat si dhe te rregjenerimi i flokëve. Rezultatet vërrehen pas një jave deri në një muaj. Varësisht nga problemet preferohen 1 deri në 4 tretmane në distancë nga një muaj. Mund të aplikohet në formë të mikroinjektimeve me gjilpëra , në shtresa të ndryshme të lëkurës me dermaroller apo dermapapen.
+                    Procedura zgjatë rreth 60 minuta. Pas tretmanit lëkura nuk duhet të pastrohet për 12 orë.
+                    <br><br>
+                    Kontraindikimet: personat me infeksion akut të lëkurës, akne të theksuara , sëmundje të lëkurës lupus porfiria, alergji, karcinomë, personat në kemioterapi, me probleme të rënda metabolike apo sëmundje sistemike dhe çrregullime të funksionit të trombociteve nuk duhet të trajtohen me PRP.
 
 
                 </h3> </div>
@@ -419,6 +442,7 @@
         <i class="fa fa-angle-up"></i>
     </div>
 
+
     <!-- =========================
    FOOTER
 ============================== -->
@@ -478,7 +502,7 @@
                         <i class="fa fa-envelope"></i> <a href="#">info@american-art.com</a>
                     </div>
                     <div class="footer-item-3-socials">
-                        < <a target="_blank" href="https://www.facebook.com/dr.beharkusari"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/dr.beharkusari"><i class="fa fa-facebook"></i></a>
                         <a target="_blank" href="https://www.youtube.com/channel/UCs--UA3OD27VbH-P4FNJQig"><i class="fa fa-youtube"></i></a>
                     </div>
                 </div>
@@ -493,10 +517,9 @@
     <!-- =========================
         END FOOTER
     ============================== -->
-
     <!-- =========================
-        RESPONSIVE STYLE
-    ============================== -->
+           RESPONSIVE STYLE
+       ============================== -->
 
     <link rel="stylesheet" type="text/css" href="{{URL::to('webassets/css/responsive.css')}}" />
 
@@ -543,6 +566,7 @@
     <script src="{{URL::to('webassets/js/script.js')}}"></script>
     <!-- GOOGLE MAPS -->
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC1N87a_NHjocaepKKcovPAYTMUkJBr9pQ&amp;language=en&amp;sensor=true"></script>
+
 
     <script>
         $("#contact").click(function() {

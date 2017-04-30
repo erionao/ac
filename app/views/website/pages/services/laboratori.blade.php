@@ -71,10 +71,10 @@
 
             <!-- HEADER BUTTONS -->
 
+
             <div class="doctor-b">
                 <img src="{{URL::to('webassets/icons/ac_2.svg')}}" alt="">
             </div>
-
 
         </div>
     </div>
@@ -103,8 +103,8 @@
                     </div>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/') }}" class="active">BALLINA</a></li>
-                    <li class=" active"><a href="{{ url('/about') }}">PËR KLINIKËN</a></li>
+                    <li class="active"><a href="{{ url('/') }}" class="active">BALLINA</a></li>
+                    <li><a href="{{ url('/about') }}">PËR KLINIKËN</a></li>
                     <li class="dropdown">
                         <a data-toggle="dropdown" href="#">SHËRBIMET</a>
                         <ul class="dropdown-menu" role="menu">
@@ -126,12 +126,12 @@
                     <li class="dropdown">
                         <a href="{{ url('/doctors') }}">STAFI</a>
                         <!-- <ul class="dropdown-menu" role="menu">
-                            <li><a href="doctors.html">Our doctors</a></li>
+							<li><a href="doctors.html">Our doctors</a></li>
                             <li><a href="doctor.html">Doctor</a></li>
                         </ul> -->
                     </li>
                     <li class="dropdown">
-                        <a href="{{ url('/') }}#ac_news">LAJMET E FUNDIT</a>
+                        <a id="latest_news" href="#">LAJMET E FUNDIT</a>
                         <!--  <ul class="dropdown-menu" role="menu">
                              <li><a href="blog1.html">Right sidebar</a></li>
                              <li><a href="blog2.html">Left sidebar</a></li>
@@ -164,7 +164,6 @@
 </div>
 
 
-
 <div class="doctors-text">
     <div class="container-fluid doctors-img-container">
         <div class="row">
@@ -172,7 +171,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header">
 
                 <!--   <h1 class="sp-layer col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header-title">we have <span>well trained staff</span> and <span>qualified</span></h1> -->
-                <img class="staff-img" src="{{URL::to('webassets/images/about.png')}}">
+                <img class="staff-img" src="{{URL::to('webassets/images/services/laboratori.png')}}">
 
 
             </div>
@@ -188,24 +187,43 @@
         <div class="row">
             <div class="col-md-2">   </div>
             <div class="col-md-8">
-                <h2 class="section-title titulli">Për <span class="bold700">klinikën</span></h2>
+                <h2 class="section-title titulli"><span class="bold700">Laboratori Biokimik</span></h2>
                 <h3 class="qs-text">
 
-                    Që nga viti 1996 nën udhëheqjen e Dr. Spec. Behar Kusari dhe përmes trajnimeve të stafit e zhvillimit të teknologjisë të paisur me aparaturën më të sofistikuar, jemi të përkushtuar të ju ndimojmë në sfidat e reja jetësore. Në fillim me trajtimin e infertilitetit femëror dhe mashkullor e tani edhe me trajtimet e dermatologjisë, me repartin e neonatologjisë bllokun operativ dhe bllokun e lindjeve. <br><br>
+                    Gjatë vizitave mjekësore nuk keni nevojë të merakoseni se ku do t’i bëni analizat biokimike. Laboratori biokimik i paisur me aparaturën më moderne është i përgaditur të i plotësoj nevojat e juaja për analiza nga rekomandimi i mjekut specialist gjatë kontrollës mjekësore.
+                    <br><br>
+                    <b> Analizat biokimike:</b> <br><br>
+                    <div class="analizat row">
+                        <div class="col-md-6 col-xs-12">
+                            Asto <br>
+                            Pasqyra e gjakut <br>
+                            PAP Test<br>
+                            Asto<br>
+                            Beta HCG<br>
+                            Urina<br>
+                            Grupi i gjakut<br>
+                            Hepatiti B, C dhe HIV<br>
+                            Skreningu per Chlamydia (urine)<br>
+                            Program Lab +CRP<br>
+                            Statusi Hormonal<br>
+                            Faktorwt reumatik<br>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            Triple Testi<br>
+                            Tumor Markeret 125<br>
+                            Tumor Markeret 153<br>
+                            Gjandrat Tiroide T3 T4 dhe TSH<br>
+                            Progesteron<br>
+                            LH<br>
+                            Amh<br>
+                            Ogtt<br>
+                            Ctg<br>
+                            Faktoret e Koagologramit<br>
+                            Hba1C<br>
+                            CEAS<br>
 
-                    Njësia e reprodukimit të asistuar përmban hapësira luksoze dekorative të pritjes, salla operative dhe laboratore bashkëkohore embriologjike dhe andrologjike. <br><br>
-
-                    Përkujdesja jonë profesionale e bënë American Clinic qendër të përkryer për shëndetin e femrës, me një ekip mjekësor vendor të udhëhequr nga Dr. Behar Kusari - Specialist Gjinekolog Obstetër- fertilarts si dhe në bashkëpunim me mjekë specialist ndërkombëtar. Stafi vendor dhe ai ndërkombëtar i American Clinic janë të specializuar në këtë lëmi, me një bagazh të arriturash që nga viti 1996. Njësia e udhëhequr nga Dr. spec. Behar Kusari funksionon si një ekip me përvojë i përbërë nga 2 gjinekolog , 2 embriolog, 2 teknik të embriologjisë dhe 1 androlog. Ndërsa personeli përkrahës përbëhet nga gjenetist, motrat medicinale të trajnuara me standarde të larta etike dhe profesionale shëndetësore. <br><br>
-
-                    Më 8 mars 2017, në dhjetë vjetorin e hapjes së klinkës për infertilitet dhe gjinekologji, i përuruam hapësirat e reja të spitalit special për gjinekologji, obstetrikë dhe infertilitet. Me një hapësirë të rehatshme dhe luksoze tani spitali special është i paisur me teknologjinë më moderne të sallave të lindjes dhe bllokut operativ për ndërhyrje të lindjeve me prerje cezariane. <br><br>
-
-                    Përveç kujdesit ndaj pacientëve ekipi i reprodukimit të asistuar të American Clinic është shumë aktiv në hulumtimet shkencore të publikuara në revistat shkencore me renome botërore. <br><br>
-
-                    Klinicistët, embriologët dhe stafi ynë është pjesëmarrës aktiv në kongrese dhe simpoziume shkencore Evropiane dhe Botërore. <br><br>
-
-                    American Clinic nuk na përket vetëm neve por edhe qindra bashkëshortëve që nuk kanë përjetuar ngrohtësinë e butë të frymëmarrjes së fëmijëve, krenarinë e shpirtit prindëror. Ne përpiqemi t'ua krijojmë qëllimin e jetës tuaj.
-
-
+                        </div>
+                    </div>
 
 
                 </h3> </div>
@@ -419,6 +437,7 @@
         <i class="fa fa-angle-up"></i>
     </div>
 
+
     <!-- =========================
    FOOTER
 ============================== -->
@@ -471,14 +490,14 @@
                         <i class="fa fa-phone"></i> +377 45 126 188
                     </div>
                     <div class="footer-item-3-location">
-                        <i class="flaticon-navigation-arrow"></i>Magjistralja Prishtinë - Shkup <br>
+                        <i class="flaticon-navigation-arrow"></i> Magjistralja Prishtinë - Shkup<br>
                         <i class=""></i>&nbsp;&nbsp;&nbsp;&nbsp; 10.000, Prishtinë, Kosovo
                     </div>
                     <div class="footer-item-3-mail">
                         <i class="fa fa-envelope"></i> <a href="#">info@american-art.com</a>
                     </div>
                     <div class="footer-item-3-socials">
-                        < <a target="_blank" href="https://www.facebook.com/dr.beharkusari"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/dr.beharkusari"><i class="fa fa-facebook"></i></a>
                         <a target="_blank" href="https://www.youtube.com/channel/UCs--UA3OD27VbH-P4FNJQig"><i class="fa fa-youtube"></i></a>
                     </div>
                 </div>
@@ -493,10 +512,9 @@
     <!-- =========================
         END FOOTER
     ============================== -->
-
     <!-- =========================
-        RESPONSIVE STYLE
-    ============================== -->
+           RESPONSIVE STYLE
+       ============================== -->
 
     <link rel="stylesheet" type="text/css" href="{{URL::to('webassets/css/responsive.css')}}" />
 
@@ -543,6 +561,7 @@
     <script src="{{URL::to('webassets/js/script.js')}}"></script>
     <!-- GOOGLE MAPS -->
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC1N87a_NHjocaepKKcovPAYTMUkJBr9pQ&amp;language=en&amp;sensor=true"></script>
+
 
     <script>
         $("#contact").click(function() {

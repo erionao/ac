@@ -154,15 +154,15 @@ Route::group(array('before' => 'auth'), function()
  */
 Route::get('/', 'WebController@home');
 Route::get('/about', 'WebController@about');
+Route::get('/doctors', 'WebController@doctors');
+Route::get('/gallery', 'WebController@gallery');
 
-
-Route::get('/catering', 'WebController@catering');
-Route::get('/consulting', 'WebController@consulting');
-Route::get('/chocolate', 'WebController@chocolate');
-
-Route::get('/career', 'WebController@career');
-Route::get('/news', 'WebController@news');
-Route::get('/contact', 'WebController@contact');
+Route::get('/art', 'WebController@art');
+Route::get('/dermatologjia', 'WebController@dermatologjia');
+Route::get('/gjinekologjia', 'WebController@gjinekologjia');
+Route::get('/laboratori', 'WebController@laboratori');
+Route::get('/lindjet', 'WebController@lindjet');
+Route::get('/neonatologjia', 'WebController@neonatologjia');
 
 //Route::get('blog/{id}', 'BlogController@webShow');
 

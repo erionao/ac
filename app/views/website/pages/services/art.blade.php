@@ -71,10 +71,10 @@
 
             <!-- HEADER BUTTONS -->
 
+
             <div class="doctor-b">
                 <img src="{{URL::to('webassets/icons/ac_2.svg')}}" alt="">
             </div>
-
 
         </div>
     </div>
@@ -103,8 +103,8 @@
                     </div>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/') }}" class="active">BALLINA</a></li>
-                    <li class=" active"><a href="{{ url('/about') }}">PËR KLINIKËN</a></li>
+                    <li class="active"><a href="{{ url('/') }}" class="active">BALLINA</a></li>
+                    <li><a href="{{ url('/about') }}">PËR KLINIKËN</a></li>
                     <li class="dropdown">
                         <a data-toggle="dropdown" href="#">SHËRBIMET</a>
                         <ul class="dropdown-menu" role="menu">
@@ -126,12 +126,12 @@
                     <li class="dropdown">
                         <a href="{{ url('/doctors') }}">STAFI</a>
                         <!-- <ul class="dropdown-menu" role="menu">
-                            <li><a href="doctors.html">Our doctors</a></li>
+							<li><a href="doctors.html">Our doctors</a></li>
                             <li><a href="doctor.html">Doctor</a></li>
                         </ul> -->
                     </li>
                     <li class="dropdown">
-                        <a href="{{ url('/') }}#ac_news">LAJMET E FUNDIT</a>
+                        <a id="latest_news" href="#">LAJMET E FUNDIT</a>
                         <!--  <ul class="dropdown-menu" role="menu">
                              <li><a href="blog1.html">Right sidebar</a></li>
                              <li><a href="blog2.html">Left sidebar</a></li>
@@ -172,7 +172,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header">
 
                 <!--   <h1 class="sp-layer col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header-title">we have <span>well trained staff</span> and <span>qualified</span></h1> -->
-                <img class="staff-img" src="{{URL::to('webassets/images/about.png')}}">
+                <img class="staff-img" src="{{URL::to('webassets/images/services/art.png')}}">
 
 
             </div>
@@ -188,23 +188,38 @@
         <div class="row">
             <div class="col-md-2">   </div>
             <div class="col-md-8">
-                <h2 class="section-title titulli">Për <span class="bold700">klinikën</span></h2>
+                <h2 class="section-title titulli"><span class="bold700">Asistimi i Reprodukuar Mjekësor</span></h2>
                 <h3 class="qs-text">
 
-                    Që nga viti 1996 nën udhëheqjen e Dr. Spec. Behar Kusari dhe përmes trajnimeve të stafit e zhvillimit të teknologjisë të paisur me aparaturën më të sofistikuar, jemi të përkushtuar të ju ndimojmë në sfidat e reja jetësore. Në fillim me trajtimin e infertilitetit femëror dhe mashkullor e tani edhe me trajtimet e dermatologjisë, me repartin e neonatologjisë bllokun operativ dhe bllokun e lindjeve. <br><br>
 
-                    Njësia e reprodukimit të asistuar përmban hapësira luksoze dekorative të pritjes, salla operative dhe laboratore bashkëkohore embriologjike dhe andrologjike. <br><br>
+                    <b>Çka është Asistimi i Reprodukuar Mjekësor?</b><br>
+                    E thënë thjesht, ART është kur qelizat vezë janë të fekonduara në laborator special me metodën ICSI me spermën nga mashkulli. Embrionet që rezultojnë të fekonduara transferohen në mitrën e femrës për të filluar rritjen, si në një shtatzëni normale. <br><br>
 
-                    Përkujdesja jonë profesionale e bënë American Clinic qendër të përkryer për shëndetin e femrës, me një ekip mjekësor vendor të udhëhequr nga Dr. Behar Kusari - Specialist Gjinekolog Obstetër- fertilarts si dhe në bashkëpunim me mjekë specialist ndërkombëtar. Stafi vendor dhe ai ndërkombëtar i American Clinic janë të specializuar në këtë lëmi, me një bagazh të arriturash që nga viti 1996. Njësia e udhëhequr nga Dr. spec. Behar Kusari funksionon si një ekip me përvojë i përbërë nga 2 gjinekolog , 2 embriolog, 2 teknik të embriologjisë dhe 1 androlog. Ndërsa personeli përkrahës përbëhet nga gjenetist, motrat medicinale të trajnuara me standarde të larta etike dhe profesionale shëndetësore. <br><br>
+                    <b>Kur është e nevojshme ART?</b> <br>
+                    ART është zhvilluar për t’i ndihmuar femrat me tuba fallopiane të dëmtuara ose të bllokuara, duke vendosur embrionet direkt në mitër për të anashkaluar pjesën e dëmtuar. Kjo metodë, është trajtim i përshtatshëm në rastet kur nuk dihet shkaku i infertilitetit ose në disa raste të inferitilitetit mashkullor.
+                    <br><br>
+                    <b>Cili është procesi i ART?</b> <br>
+                    ART ndahet në pesë faza kryesore  - prodhimi i qelizave vezë, monitorimi i prodhimit të qelizave vezë, shërimi i qelizave vezë, mbarësimi dhe transferimi i embrionit. <br><br>
 
-                    Më 8 mars 2017, në dhjetë vjetorin e hapjes së klinkës për infertilitet dhe gjinekologji, i përuruam hapësirat e reja të spitalit special për gjinekologji, obstetrikë dhe infertilitet. Me një hapësirë të rehatshme dhe luksoze tani spitali special është i paisur me teknologjinë më moderne të sallave të lindjes dhe bllokut operativ për ndërhyrje të lindjeve me prerje cezariane. <br><br>
+                    <b>Prodhimi i vezëve</b> <br>
+                    Hapi i parë është që përmesë medikamenteve të ndryshme të stimulohet prodhimi i qelizave vezë.
+                    <br><br>
+                    <b>Monitorimi i prodhimit të vezëve</b> <br>
+                    Mjekët dhe teknikët tanë përdorin regullisht skanimin përmes ultra tingullit dhe testet e gjakut për të monitoriuar prodhimin e qelizave vezë. Pasi gjandrat që rrethojnë qelizat vezë janë të madhësisë së duhur, përmes medikamenteve sigurohet rritja e qelizave vezë dhe bëhet përgaditja për kolektimin e qelizave vezë.
+                    <br><br>
+                    <b>Rigjenerimi i qelizave vezë</b> <br>
+                    Qelizat vezë kolektohen duke përdorur ultra tingullin vaginal nën anestezion lokal. Qelizat vezë vlerësohen dhe vendosen në inkubator për tu mbarësuar.
+                    <br><br>
+                    <b>Mbarësimi</b> <br>
+                    Në po të njëjtën ditë, partneri juaj do ta dorëzoj një mostër të spermës ku përzgjidhen qelizat më të lëvizëshme për tu përzier me qelizat vezë. Pastaj, inkubohen brenda natës, për tu kontrolluar në mengjes nga stafi mjekësor për shenja fekondimi. <br><br>
 
-                    Përveç kujdesit ndaj pacientëve ekipi i reprodukimit të asistuar të American Clinic është shumë aktiv në hulumtimet shkencore të publikuara në revistat shkencore me renome botërore. <br><br>
+                    <b>Transferimi i embrionit</b> <br>
+                    Pas fekondimit, me një procedurë të thjeshtë që nuk ka nevojë për qetësues dhe anestezion, embrionet më të mira vendosen në mitrën e femrës.  <br><br>
 
-                    Klinicistët, embriologët dhe stafi ynë është pjesëmarrës aktiv në kongrese dhe simpoziume shkencore Evropiane dhe Botërore. <br><br>
-
-                    American Clinic nuk na përket vetëm neve por edhe qindra bashkëshortëve që nuk kanë përjetuar ngrohtësinë e butë të frymëmarrjes së fëmijëve, krenarinë e shpirtit prindëror. Ne përpiqemi t'ua krijojmë qëllimin e jetës tuaj.
-
+                    <b>Shërbimet e ART</b> <br>
+                    American Clinic me laboratorin më modern të asistimit të reprodukuar mjekësor ofron shërbime mjekësore embriologjike dhe andrologjike që përfshijnë: <br> <br>
+                    IVF-ICSI (trajtimi i folikujve të aspiruar deri në bashkimin e tyre me spermatozoid), Z-score (identifikimi si dhe përzgjedhja e embrioneve në bazë të kualitetit morfologjik të tyre), trajtimi në fazën bllastocyst (hatching zona me laser), ET (transferimi i embrioneve),  IUI (insiminimi intrauterin), ruajtja e oociteve, embrioneve dita 1 ,2 ,3 si dhe bllastocyst dita 5 me metodën më bashkëkohore Vitrifikim me teknikën KITAZATO me mbijetesë të tyre mbi 90%, PGS - (preimplantimi i skreningut gjenetik duke përfshirë kromozomet 13, 18, 21, rastet me aneuploidy e shumë anomali të tjera gjentike), Kariotipi (identifikimi i gjakut për ndonjë ndryshim kromozomal dhe struktural të individit). <br> <br>
+                    Ndërsa në andrologji përfshinë: analiza e spermogramit (identifikimi i tyre për nga morfologjia, numri, lëvizshmëria, viskoziteti, aglutinacioni etj), ngrirja e spermatozoidëve (me teknikën e tipit të mbyllur), PESA (aspirimi perkutan i epidimisit), TESE (nxjerrja testikulare e spermës-procedure kirurgjikale te meshkujt me azospermi obstruktive dhe jo obstruktive).
 
 
 
@@ -419,6 +434,7 @@
         <i class="fa fa-angle-up"></i>
     </div>
 
+
     <!-- =========================
    FOOTER
 ============================== -->
@@ -471,14 +487,14 @@
                         <i class="fa fa-phone"></i> +377 45 126 188
                     </div>
                     <div class="footer-item-3-location">
-                        <i class="flaticon-navigation-arrow"></i>Magjistralja Prishtinë - Shkup <br>
+                        <i class="flaticon-navigation-arrow"></i> Magjistralja Prishtinë - Shkup <br>
                         <i class=""></i>&nbsp;&nbsp;&nbsp;&nbsp; 10.000, Prishtinë, Kosovo
                     </div>
                     <div class="footer-item-3-mail">
                         <i class="fa fa-envelope"></i> <a href="#">info@american-art.com</a>
                     </div>
                     <div class="footer-item-3-socials">
-                        < <a target="_blank" href="https://www.facebook.com/dr.beharkusari"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/dr.beharkusari"><i class="fa fa-facebook"></i></a>
                         <a target="_blank" href="https://www.youtube.com/channel/UCs--UA3OD27VbH-P4FNJQig"><i class="fa fa-youtube"></i></a>
                     </div>
                 </div>
@@ -493,7 +509,6 @@
     <!-- =========================
         END FOOTER
     ============================== -->
-
     <!-- =========================
         RESPONSIVE STYLE
     ============================== -->
@@ -551,12 +566,14 @@
             }, 2000);
         });
     </script>
+
     <script>
         if($(window).width() > 768)
         {
             $("html, body").animate({ scrollTop: 600 }, 800);
         }
     </script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
