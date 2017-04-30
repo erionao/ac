@@ -61,12 +61,11 @@ class WebController extends \BaseController
 
 
 
-    public function history()
+    public function about()
     {
         $logo = Cover::where('type', 'logo')->get();
-        return \View::make('website.pages.history', array('logo' => $logo));
+        return \View::make('website.pages.about', array('logo' => $logo));
     }
-
 
 
     public function career()

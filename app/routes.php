@@ -153,10 +153,13 @@ Route::group(array('before' => 'auth'), function()
  * Website Routes
  */
 Route::get('/', 'WebController@home');
+Route::get('/about', 'WebController@about');
+
+
 Route::get('/catering', 'WebController@catering');
 Route::get('/consulting', 'WebController@consulting');
 Route::get('/chocolate', 'WebController@chocolate');
-Route::get('/history', 'WebController@history');
+
 Route::get('/career', 'WebController@career');
 Route::get('/news', 'WebController@news');
 Route::get('/contact', 'WebController@contact');

@@ -108,8 +108,8 @@
                     </div>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.php" class="active">BALLINA</a></li>
-                    <li><a href="about.php">PËR KLINIKËN</a></li>
+                    <li class="active"><a href="{{ url('/') }}" class="active">BALLINA</a></li>
+                    <li><a href="{{ url('/about') }}">PËR KLINIKËN</a></li>
                     <li class="dropdown">
                         <a data-toggle="dropdown" href="#">SHËRBIMET</a>
                         <ul class="dropdown-menu" role="menu">
