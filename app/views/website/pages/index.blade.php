@@ -215,7 +215,7 @@
                    data-position="leftCenter" data-horizontal="15" data-vertical="300"
                    data-show-transition="left" data-hide-transition="left"
                    data-show-delay="800" data-hide-delay="800">
-                    <a href="about.php" class="btn btn-primary btn-me-shume">ME SHUME</a>
+                    <a href="{{ url('/about') }}" class="btn btn-primary btn-me-shume">ME SHUME</a>
                 </p>
 
             </div>
@@ -258,7 +258,7 @@
                    data-position="leftCenter" data-horizontal="15" data-vertical="300"
                    data-show-transition="left" data-hide-transition="left"
                    data-show-delay="800" data-hide-delay="800">
-                    <a href="lindjet.php" class="btn btn-primary btn-me-shume">ME SHUME</a>
+                    <a href="{{ url('/lindjet') }}" class="btn btn-primary btn-me-shume">ME SHUME</a>
                 </p>
 
             </div>
@@ -302,7 +302,7 @@
                    data-position="leftCenter" data-horizontal="15" data-vertical="300"
                    data-show-transition="left" data-hide-transition="left"
                    data-show-delay="800" data-hide-delay="800">
-                    <a href="art.php" class="btn btn-primary btn-me-shume">ME SHUME</a>
+                    <a href="{{ url('/art') }}" class="btn btn-primary btn-me-shume">ME SHUME</a>
                 </p>
 
             </div>
@@ -344,7 +344,7 @@
                    data-position="leftCenter" data-horizontal="15" data-vertical="300"
                    data-show-transition="left" data-hide-transition="left"
                    data-show-delay="800" data-hide-delay="800">
-                    <a href="dermatologjia.php" class="btn btn-primary btn-me-shume">ME SHUME</a>
+                    <a href="{{ url('/dermatologjia') }}" class="btn btn-primary btn-me-shume">ME SHUME</a>
                 </p>
 
             </div>
@@ -385,7 +385,7 @@
                    data-position="leftCenter" data-horizontal="15" data-vertical="300"
                    data-show-transition="left" data-hide-transition="left"
                    data-show-delay="800" data-hide-delay="800">
-                    <a href="neonatologjia.php" class="btn btn-primary btn-me-shume">ME SHUME</a>
+                    <a href="{{ url('/neonatologjia') }}" class="btn btn-primary btn-me-shume">ME SHUME</a>
                 </p>
 
             </div>
@@ -469,7 +469,7 @@
                    data-position="leftCenter" data-horizontal="15" data-vertical="300"
                    data-show-transition="left" data-hide-transition="left"
                    data-show-delay="800" data-hide-delay="800">
-                    <a href="laboratori.php" class="btn btn-primary btn-me-shume">ME SHUME</a>
+                    <a href="{{ url('/laboratori') }}" class="btn btn-primary btn-me-shume">ME SHUME</a>
                 </p>
 
             </div>
