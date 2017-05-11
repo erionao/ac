@@ -22,7 +22,7 @@
 
 
     <ul class="nav navbar-top-links navbar-right navigation-logo-brand">
-        <img src="../img/emirates-logo-01.png">
+        <img src="{{URL::to('/webassets/icons/ac_1.svg')}}">
     </ul>
 
     <!-- /.navbar-top-links -->

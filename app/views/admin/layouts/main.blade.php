@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Emirates CMS</title>
+    <title>American Clinic CMS</title>
 
     <link rel="stylesheet" href="{{URL::to('css/admin.css')}}"/>
 
@@ -41,7 +41,7 @@
 <footer>
     <div class="row">
         <div class="col-lg-12">
-            <p>Copyright &copy; Emirates Graphics 2016</p>
+            <p></p>
         </div>
     </div>
 </footer>

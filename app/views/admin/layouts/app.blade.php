@@ -49,7 +49,6 @@
                             <button type="submit" class="btn btn-lg btn-success btn-block button-login">
                                 Login
                             </button>
-                            <a href="http://emiratesgraphic.com/" class="emirates-link-bottom"  target="_blank">www.emiratesgraphic.com</a>
                         </fieldset>
                     </form>
                 </div>
