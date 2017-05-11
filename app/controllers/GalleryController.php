@@ -38,14 +38,14 @@ class GalleryController extends \BaseController
         $gallery  = new Gallery();
 
         $gallery->image = \Input::file('image');
-        $gallery->category = \Input::get('category');
+
 
         $destination = 'uploads/gallery/';
 
         $imageName = str_random() . '.' . $gallery->image->getClientOriginalExtension();
 
 //        \Input::file('image')->move(public_path() . $destination, $imageName);
-        Image::make(\Input::file('image'))->resize(300, 200)->save($destination.$imageName);
+        Image::make(\Input::file('image'))->save($destination.$imageName, 75);
 
         $gallery->image = $imageName;
 
@@ -91,7 +91,6 @@ class GalleryController extends \BaseController
         $gallery = Gallery::find($id);
 
         $gallery->image = \Input::file('image');
-        $gallery->category = \Input::get('category');
 
         $destination = 'uploads/gallery/';
 

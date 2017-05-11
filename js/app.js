@@ -4,6 +4,8 @@ var app = angular.module('manjakos-landscape', ['ngFileUpload', 'ckeditor', 'dat
     $interpolateProvider.endSymbol('%>');
 });
 
+
+
 app.controller('ProjectList', function($scope, $timeout, $http, $window, $log){
 
     $http.get("/projects/all")
@@ -226,47 +228,11 @@ app.controller('ProjectDetailsCtrl', function($scope, $location, $http, Upload){
             });
     }
 });
-
-//app.controller('BlogAddCtrl', function($scope, Upload, $window, $log){
-//    $scope.options = {
-//        language: 'en',
-//        allowedContent: true,
-//        entities: false
-//    };
-//
-//    $scope.saveBlog = function(blog, file){
-//        Upload.upload({
-//            url: '/blog/add',
-//            method: 'POST',
-//            file:  file,
-//            data: blog
-//        }).then(function (response) {
-//
-//            $scope.finalize(response.data.id);
-//        });
-//    };
-//
-//    $scope.go = function ( path ) {
-//        var url = "http://" + $window.location.host + path;
-//        $log.log(url);
-//        $window.location.href = url;
-//    };
-//
-//    $scope.finalize = function(blogId){
-//        swal({
-//                title: "Save Successfully",
-//                type: "success",
-//                showCancelButton: false,
-//                confirmButtonColor: "#DD6B55",
-//                confirmButtonText: "Ok",
-//                closeOnConfirm: false
-//            },
-//            function () {
-//                $scope.go('/blog/details/' + blogId );
-//            });
-//    };
-//
-//});
+app.filter('vidUrl', function ($sce) {
+    return function(videoId) {
+        return $sce.trustAsResourceUrl('http://localhost:8000/uploads/blogs/videos/' + videoId);
+    };
+});
 
 app.controller('BlogListCtrl', function($scope, $timeout, $http, $window, $log){
 
@@ -351,7 +317,7 @@ app.controller('BlogDetailsCtrl', function($scope, Upload, $http, $location){
             .then(function (response) {
 
                 $scope.blog = response.data;
-                console.log($scope.blog);
+
 
             });
     };
@@ -429,6 +395,7 @@ app.controller('BlogAddCtrl', function($scope, Upload, $window, $log, $http){
     };
 
     $scope.images = [];
+    $scope.videos = [];
 
     $scope.removeImage = function(index){
         $scope.images.splice(index, 1)
@@ -442,8 +409,22 @@ app.controller('BlogAddCtrl', function($scope, Upload, $window, $log, $http){
         //console.log($scope.images);
     };
 
+    $scope.saveVideo = function(video){
+        $scope.videos = [];
+        $scope.videos.push({
+            videos:video[0]
+        });
+        //console.log($scope.images);
+    };
+
+    $scope.removeVideos = function(index){
+        $scope.videos.splice(index, 1)
+    };
+
 
     $scope.saveBlog = function(blog){
+
+        console.log("dsad");
 
         if(!("title" in blog) || blog.title === "" || blog.content === ""){
             $.notify("You should fill all fields", "info");
@@ -457,7 +438,7 @@ app.controller('BlogAddCtrl', function($scope, Upload, $window, $log, $http){
         Upload.upload({
             url: '/blog/save',
             method: 'POST',
-            file:  $scope.images,
+            file:  {images:$scope.images, videos:$scope.videos},
             data: blog
         }).then(function (response) {
 
@@ -858,6 +839,7 @@ app.controller('JobDetailsCtrl', function($scope, $window, $log, $http, $locatio
         $scope.findById(jobId);
     }
 });
+
 
 
 

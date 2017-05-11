@@ -36,19 +36,19 @@
                 <li>
                     <a href="{{ url('cover') }}"><i class="fa fa-picture-o"></i> Cover Image</a>
                 </li>
-                {{--<li>--}}
-                    {{--<a href="{{ url('gallery/images') }}"><i class="fa fa-picture-o"></i> Edit Gallery</a>--}}
+                <li>
+                    <a href="{{ url('gallery/images') }}"><i class="fa fa-picture-o"></i> Edit Gallery</a>
 
-                {{--</li>--}}
+                </li>
                 <li>
                     <a href="{{ url('pages') }}"><i class="fa fa-columns"></i> Pages Text</a>
                 </li>
                 <li>
                     <a href="{{ url('background') }}"><i class="fa fa-columns"></i> Pages Image</a>
                 </li>
-                <li>
-                    <a href="{{ url('job/lists') }}"><i class="fa fa-clipboard"></i> Job Offer</a>
-                </li>
+                {{--<li>--}}
+                    {{--<a href="{{ url('job/lists') }}"><i class="fa fa-clipboard"></i> Job Offer</a>--}}
+                {{--</li>--}}
                 {{--<li>--}}
                     {{--<a href="{{ url('email/configuration') }}"><i class="fa fa-columns"></i> Email Configuration</a>--}}
                 {{--</li>--}}

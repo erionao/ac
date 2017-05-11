@@ -28,7 +28,7 @@
 <body data-spy="scroll" data-target=".navbar">
 
 <div class="preloader" id="preloader">
-    <img src="{{URL::to('webassets/images/preloader.gif')}}" alt="" />
+    <img src="{{URL::to('webassets/images/preloader1.gif')}}" alt="" />
 </div>
 
 <!-- =========================
@@ -131,7 +131,7 @@
                         </ul> -->
                     </li>
                     <li class="dropdown">
-                        <a id="latest_news" href="#">LAJMET E FUNDIT</a>
+                        <a href="{{ url('/') }}#ac_news">LAJMET E FUNDIT</a>
                         <!--  <ul class="dropdown-menu" role="menu">
                              <li><a href="blog1.html">Right sidebar</a></li>
                              <li><a href="blog2.html">Left sidebar</a></li>
@@ -172,7 +172,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header">
 
                 <!--   <h1 class="sp-layer col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header-title">we have <span>well trained staff</span> and <span>qualified</span></h1> -->
-                <img class="staff-img" src="{{URL::to('webassets/images/services/art.png')}}">
+                <img class="staff-img" src="{{URL::to('webassets/images/services/art1.png')}}">
 
 
             </div>
@@ -190,39 +190,7 @@
             <div class="col-md-8">
                 <h2 class="section-title titulli"><span class="bold700">Asistimi i Reprodukuar Mjekësor</span></h2>
                 <h3 class="qs-text">
-
-
-                    <b>Çka është Asistimi i Reprodukuar Mjekësor?</b><br>
-                    E thënë thjesht, ART është kur qelizat vezë janë të fekonduara në laborator special me metodën ICSI me spermën nga mashkulli. Embrionet që rezultojnë të fekonduara transferohen në mitrën e femrës për të filluar rritjen, si në një shtatzëni normale. <br><br>
-
-                    <b>Kur është e nevojshme ART?</b> <br>
-                    ART është zhvilluar për t’i ndihmuar femrat me tuba fallopiane të dëmtuara ose të bllokuara, duke vendosur embrionet direkt në mitër për të anashkaluar pjesën e dëmtuar. Kjo metodë, është trajtim i përshtatshëm në rastet kur nuk dihet shkaku i infertilitetit ose në disa raste të inferitilitetit mashkullor.
-                    <br><br>
-                    <b>Cili është procesi i ART?</b> <br>
-                    ART ndahet në pesë faza kryesore  - prodhimi i qelizave vezë, monitorimi i prodhimit të qelizave vezë, shërimi i qelizave vezë, mbarësimi dhe transferimi i embrionit. <br><br>
-
-                    <b>Prodhimi i vezëve</b> <br>
-                    Hapi i parë është që përmesë medikamenteve të ndryshme të stimulohet prodhimi i qelizave vezë.
-                    <br><br>
-                    <b>Monitorimi i prodhimit të vezëve</b> <br>
-                    Mjekët dhe teknikët tanë përdorin regullisht skanimin përmes ultra tingullit dhe testet e gjakut për të monitoriuar prodhimin e qelizave vezë. Pasi gjandrat që rrethojnë qelizat vezë janë të madhësisë së duhur, përmes medikamenteve sigurohet rritja e qelizave vezë dhe bëhet përgaditja për kolektimin e qelizave vezë.
-                    <br><br>
-                    <b>Rigjenerimi i qelizave vezë</b> <br>
-                    Qelizat vezë kolektohen duke përdorur ultra tingullin vaginal nën anestezion lokal. Qelizat vezë vlerësohen dhe vendosen në inkubator për tu mbarësuar.
-                    <br><br>
-                    <b>Mbarësimi</b> <br>
-                    Në po të njëjtën ditë, partneri juaj do ta dorëzoj një mostër të spermës ku përzgjidhen qelizat më të lëvizëshme për tu përzier me qelizat vezë. Pastaj, inkubohen brenda natës, për tu kontrolluar në mengjes nga stafi mjekësor për shenja fekondimi. <br><br>
-
-                    <b>Transferimi i embrionit</b> <br>
-                    Pas fekondimit, me një procedurë të thjeshtë që nuk ka nevojë për qetësues dhe anestezion, embrionet më të mira vendosen në mitrën e femrës.  <br><br>
-
-                    <b>Shërbimet e ART</b> <br>
-                    American Clinic me laboratorin më modern të asistimit të reprodukuar mjekësor ofron shërbime mjekësore embriologjike dhe andrologjike që përfshijnë: <br> <br>
-                    IVF-ICSI (trajtimi i folikujve të aspiruar deri në bashkimin e tyre me spermatozoid), Z-score (identifikimi si dhe përzgjedhja e embrioneve në bazë të kualitetit morfologjik të tyre), trajtimi në fazën bllastocyst (hatching zona me laser), ET (transferimi i embrioneve),  IUI (insiminimi intrauterin), ruajtja e oociteve, embrioneve dita 1 ,2 ,3 si dhe bllastocyst dita 5 me metodën më bashkëkohore Vitrifikim me teknikën KITAZATO me mbijetesë të tyre mbi 90%, PGS - (preimplantimi i skreningut gjenetik duke përfshirë kromozomet 13, 18, 21, rastet me aneuploidy e shumë anomali të tjera gjentike), Kariotipi (identifikimi i gjakut për ndonjë ndryshim kromozomal dhe struktural të individit). <br> <br>
-                    Ndërsa në andrologji përfshinë: analiza e spermogramit (identifikimi i tyre për nga morfologjia, numri, lëvizshmëria, viskoziteti, aglutinacioni etj), ngrirja e spermatozoidëve (me teknikën e tipit të mbyllur), PESA (aspirimi perkutan i epidimisit), TESE (nxjerrja testikulare e spermës-procedure kirurgjikale te meshkujt me azospermi obstruktive dhe jo obstruktive).
-
-
-
+                    {{$sections->content}}
                 </h3> </div>
 
             <div class="col-md-2">   </div>

@@ -32,7 +32,7 @@
 <body data-spy="scroll" data-target=".navbar">
 
 <div class="preloader" id="preloader">
-    <img src="{{URL::to('webassets/images/preloader.gif')}}" alt="" />
+    <img src="{{URL::to('webassets/images/preloader1.gif')}}" alt="" />
 </div>
 
 <!-- =========================

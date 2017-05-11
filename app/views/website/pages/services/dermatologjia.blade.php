@@ -28,7 +28,7 @@
 <body data-spy="scroll" data-target=".navbar">
 
 <div class="preloader" id="preloader">
-    <img src="{{URL::to('webassets/images/preloader.gif')}}" alt="" />
+    <img src="{{URL::to('webassets/images/preloader1.gif')}}" alt="" />
 </div>
 
 <!-- =========================
@@ -131,7 +131,7 @@
                         </ul> -->
                     </li>
                     <li class="dropdown">
-                        <a id="latest_news" href="#">LAJMET E FUNDIT</a>
+                        <a href="{{ url('/') }}#ac_news">LAJMET E FUNDIT</a>
                         <!--  <ul class="dropdown-menu" role="menu">
                              <li><a href="blog1.html">Right sidebar</a></li>
                              <li><a href="blog2.html">Left sidebar</a></li>
@@ -172,7 +172,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header">
 
                 <!--   <h1 class="sp-layer col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header-title">we have <span>well trained staff</span> and <span>qualified</span></h1> -->
-                <img class="staff-img" src="{{URL::to('webassets/images/services/dermatologjia.png')}}">
+                <img class="staff-img" src="{{URL::to('webassets/images/services/dermatologjia1.png')}}">
 
 
             </div>
@@ -191,44 +191,7 @@
                 <h2 class="section-title titulli"><span class="bold700">Dermatologjia</span></h2>
                 <h3 class="qs-text">
 
-                    Të dukeni mirë ju ndihmonë të ndjeheni mirë. <br>
-
-                    Një lëkurë e shëndoshë përveç qëreflekton bukurinë dhe personalitetin e njeriut tregon edhe shëndetin e përgjithshëm. Ne, në American Clinic së bashku me stafin e kualifikuar nën mbikqyrjen e Dr. Spec. Nexhmije Kusari i japim rëndësi të veçantë shëndetit të lëkurës tuaj. Me paisjet më moderne në repartin e dermatologjisë ju do të gjeni vendin e duhur profesional për trajtimin e lëkurës tuaj. <br> <br>
-                    Tani ne American Clinic bëhet trajtimi i lëkurës me tretmanin inovativ biostimultativ PRP (Platelet Rich Plasma) përmes plazmës së gjakut të pasuruar me proteina. <br>
-                    Stafi ynë është i trajnuar me standardet më të larta profesionale dhe etike që të ju shërbejnë me trajtime të ndryshme të lëkurës që nga Trajtimi Klasikë e deri tek Mezoterapia.
-                    <br>
-                    Lëkuara është një nga pasuritë tuaja dhe ju duhet të kujdeseni për të. <br><br>
-
-                    <b>TRAJTIMI KLASIK</b> <br>
-                    Pastrimi, pillingu, masazha dhe maska.
-                    <br><br>
-                    <b>HYDRADEMIJA</b> <br>
-                    Trajtim ekskluziv me rrymë galvanike. Trajtim për të gjitha llojet e lëkurës, si dhe te gjitha moshat.
-                    Trajtimi kryhehet në pesë faza , me produkte dhe teknolologji GUINOT INSTITUT PARIS.
-                    <br><br>
-                    <b>HYDRACLIN</b> <br>
-                    Tretman për pastrim të lëkurës me anë të elektrodës për shpërndarje të nxehtësisë, ku bëhet pastrami më i thellë dhe eliminimi i toksineve nga lëkura.
-                    <br><br>
-                    <b>HYDRADERMIA LIFT</b> <br>
-                    Trajtim për konturim dhe lifting të lëkurës, ku përms elektrostimulimit të muskujve të lëkurës i japim pamje të re me lift efekt dhe konturim. <br><br>
-                    <b>TECHNISPA</b><br>
-                    Është metodë dhe aparaturë shumë efikase për eliminimin e celulitit dhe formësimin e trupit.
-                    Aparati ka tri funksione: thyerjen e celulitit me vakum, ryma galvanike bënë që gelli kundër celulitit të depertojë thellë në lëkurë, elektrostimulimi bënë kontraktimin e muskujve, tonifikimin e lëkurës dhe formësimin e trupit.
-                    <br><br>
-                    <b>PILLING KIMIK</b> <br>
-                    Pillingu kimik është shumë i preferuar për të gjitha problemet e lëkurës dhe llojet e lëkurës.
-                    Përbërës  të ndryshëm kimik depërtojnë në thellësi të ndryshme të lëkurës dhe japin rrezultate të duhura.
-                    <br><br>
-                    <b>MEZOTERAPIJA</b> <br>
-                    Metodë e re, për aplikimin e kokteleve të ndryshme të vitaminave apo aminoacideve, si dhe substancave tjera në shtresat e mesme apo të thella të lëkurës. Koktelet e ndryshme mund të aplikohen në lëkurë me anë të injektimeve të vogla apo me dermapen. Preferohen 4 apo 5 tretmane njëra pas tjetrës.
-                    <br><br>
-                    <b>PRP </b> <br>
-                    PRP (Platelet Rich Plasma) plazma e pasuruar me proteina, është tretman biostimulativ inovativ. Bazohet në vetitë regjenerative dhe stimuluese të trombociteve. Në vendin e aplikimit ndikon në faktorët e rritjes të cilët e inicojnë procesin e regjenerimit të lëkurës. Përparësia e veçantë e këtij tretmani është se trombocitet dhe plazma e gjakut merren nga gjaku i vet pacientit dhe reaksionet e pa dëshiruara janë minimale që e bënë tërësisht natyrale.
-                    <br><br>
-                    Me këtë tretman përmiresohet tekstura dhe kualiteti i lëkurës me lëkurë që shkëlqen, minimizim i rrudhave dhe rrathët e zi rreth syve janë më pak të dukshëm. Rezultatet efektive dhe të dukshme arrihen edhe tek strijat, shenjat si dhe te rregjenerimi i flokëve. Rezultatet vërrehen pas një jave deri në një muaj. Varësisht nga problemet preferohen 1 deri në 4 tretmane në distancë nga një muaj. Mund të aplikohet në formë të mikroinjektimeve me gjilpëra , në shtresa të ndryshme të lëkurës me dermaroller apo dermapapen.
-                    Procedura zgjatë rreth 60 minuta. Pas tretmanit lëkura nuk duhet të pastrohet për 12 orë.
-                    <br><br>
-                    Kontraindikimet: personat me infeksion akut të lëkurës, akne të theksuara , sëmundje të lëkurës lupus porfiria, alergji, karcinomë, personat në kemioterapi, me probleme të rënda metabolike apo sëmundje sistemike dhe çrregullime të funksionit të trombociteve nuk duhet të trajtohen me PRP.
+                    {{$sections->content}}
 
 
                 </h3> </div>

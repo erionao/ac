@@ -17,8 +17,9 @@ class Blogi extends Migration
 
 			$table->integer('id', true);
 			$table->string('title');
+            $table->string('subtitle')->nullable();
 			$table->string('content', 2000);
-			$table->string('image');
+            $table->string('youtube_link')->nullable();
 
 			$table->timestamps();
 		});

@@ -153,6 +153,7 @@ Route::group(array('before' => 'auth'), function()
  * Website Routes
  */
 Route::get('/', 'WebController@home');
+Route::get('/news/{id}', 'BlogController@detailsClient');
 Route::get('/about', 'WebController@about');
 Route::get('/doctors', 'WebController@doctors');
 Route::get('/gallery', 'WebController@gallery');

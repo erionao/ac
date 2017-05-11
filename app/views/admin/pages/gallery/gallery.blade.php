@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Emirates Graphic CMS</title>
+    <title>American Clinic CMS</title>
     <!-- Tab Logo -->
     <link rel="icon" href="img/es_logo.png">
     <!-- Bootstrap Core CSS -->
@@ -70,11 +70,6 @@
                                 <div class="modal-body">
                                     <input type="file" class="form-control" name="image" placeholder="Add Image"
                                            required/>
-                                    <select class="form-control" name="category">
-                                        <option value="air">Air Place</option>
-                                        <option value="places">Place</option>
-                                    </select>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -101,10 +96,6 @@
 
                                 <div class="modal-body">
                                     <input type="file" class="form-control" name="image" required>
-                                    <select class="form-control" name="category">
-                                        <option value="air">Air Place</option>
-                                        <option value="places">Place</option>
-                                    </select>
 
                                 </div>
                                 <div class="modal-footer">
@@ -126,7 +117,7 @@
 
 
                         <div class="col-md-4 image_edit_panel">
-                            <img src="{{URL::to('/uploads/gallery/'. $gallery->image)}}">
+                            <img src="{{URL::to('/uploads/gallery/'. $gallery->image)}}" style="width: 350px; height: 300px">
                             <button type="button" class="edit_btn" data-target="#editModal"
                                     onClick="modalEdit({{ $gallery->id}})">Edit
                             </button>

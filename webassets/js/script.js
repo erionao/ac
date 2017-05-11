@@ -39,3 +39,14 @@
     }
   });
 
+
+  if($(window).width() < 768) {
+
+      $("#contact").click(function () {
+          $('#show-menu').click();
+      });
+
+      $("#latest_news").click(function () {
+          $('#show-menu').click();
+      });
+  }

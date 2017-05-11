@@ -20,4 +20,9 @@ class Blog extends Model
     {
         return $this->hasMany('App\models\BlogImage');
     }
+
+    public function videos()
+    {
+        return $this->hasMany('App\models\BlogVideo');
+    }
 }

@@ -32,7 +32,7 @@
 <body data-spy="scroll" data-target=".navbar">
 
 <div class="preloader" id="preloader">
-    <img src="{{URL::to('webassets/images/preloader.gif')}}" alt="" />
+    <img src="{{URL::to('webassets/images/preloader1.gif')}}" alt="" />
 </div>
 
 <!-- =========================
@@ -559,12 +559,11 @@
                 <h2 class="section-title"><span class="bold700">Për</span> klinikën</h2>
                 <p>
 
-                    Që nga viti 1996 nën udhëheqjen e Dr. Spec. Behar Kusari dhe përmes trajnimeve të stafit e zhvillimit të teknologjisë, të paisur me aparaturën më të sofistikuar, jemi të përkushtuar të ju ndimojmë në sfidat e reja jetësore. Në fillim në trajtimin e infertilitetit femror dhe mashkullor e tani edhe me trajtimet e dermatologjisë, me repartin e neonatologjisë bllokun operativ dhe bllokun e lindjeve. <br><br>
-                    Më 8 mars 2017, në dhjetë vjetorin e hapjes së klinkës për infertilitet dhe gjinekologji, i përuruam hapësirat e reja të spitalit special për gjinekologji, obstetrikë dhe infertilitet. Me një hapësirë të rehatshme dhe luksoze tani spitali special është i paisur me teknologjinë më moderne të sallave të lindjes dhe bllokut operativ për ndërhyrje të lindjeve me prerje cezariane.
+                    {{$sections[0]->content}}
 
 
                 </p>
-                <a class="readmore" href="about.php">Më shumë…</a></p>
+                <a class="readmore"href="{{ url('/about') }}">Më shumë…</a></p>
             </div>
 
             <!-- ABOUT BACKGROUND -->
@@ -591,7 +590,7 @@
 
             <h2 class="section-title">Stafi ynë <span class="bold700">mjekësor</span></h2>
             <p class="section-subtitle">
-                Nën udhëheqjen e Dr. Spec. Behar Kusari dhe një stafi të gjërë nga fusha të tjera të mjekësisë si Neonatolog e Pediatër, Gjinekolog, Embriolog, Anesteziolog, Dermatolog, dhe një staf teknik e administrativ të trajnuar sipas standardeve më të larta botërore.
+                {{$sections[1]->content}}
             </p>
 
             <div class="doctors-container">
@@ -791,65 +790,69 @@
         <div class="row">
 
             <h2 class="section-title">LAJMET <span class="bold700">E FUNDIT</span></h2>
-            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p class="section-subtitle">
+                {{$sections[2]->content}}
+            </p>
 
             <div class="blog-container">
                 <div class="owl-blog" id="owl-blog">
 
                     <!-- BLOG ITEM -->
-                    <div class="blog-item news-item">
-                        <div class="blog-item-image news-image">
-                            <img src="{{URL::to('webassets/images/news/american-clinic.png')}}" alt="" />
-                            <div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 08.03.2017</div>
-                            <!--  <div class="blog-item-comments"><i class="fa fa-comments-o"></i> 7</div> -->
+                    @foreach($blogs as $blog)
+                        <div class="blog-item news-item">
+                            <div class="blog-item-image news-image">
+                                @if($blog->images != null)<img src="{{URL::to('uploads/blogs/images/'. $blog->images[0]->image)}}" alt="" />@endif
+                                <div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 08.03.2017</div>
+                                <!--  <div class="blog-item-comments"><i class="fa fa-comments-o"></i> 7</div> -->
+                            </div>
+                            <div class="blog-item-title"><h3><a href="news_1.php">{{$blog->title}}</a></h3></div>
+                            <div class="blog-item-author"><a href="#"></a></div>
+                            <div class="blog-item-text">{{$blog->content}}</div>
+                            <div class="blog-item-button"><a href="{{url('/news/'. $blog->id)}}" class="btn btn-primary-1">Më shumë</a></div>
                         </div>
-                        <div class="blog-item-title"><h3><a href="news_1.php">Përurohet objekti i ri i Klinikës Amerikane (Video)</a></h3></div>
-                        <div class="blog-item-author"><a href="#"></a></div>
-                        <div class="blog-item-text">Në dhjetëvejtorin e punës Klinika Amerikane në Prishtinë ka përuruar objektin e ri. Me kushte të standardeve më të larta dhe me staf të specializuar tani janë krijuar edhe kushtet për ofrimin e shërbimeve të nivelit më të lartë për shëndetin e femrës.</div>
-                        <div class="blog-item-button"><a href="news_1.php" class="btn btn-primary-1">Më shumë</a></div>
-                    </div>
+                    @endforeach
 
-                    <div class="blog-item news-item">
-                        <div class="blog-item-image news-image">
-                            <img src="{{URL::to('webassets/images/news/n_k.png')}}" alt="" />
-                            <div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 25.03.2017</div>
+                    {{--<div class="blog-item news-item">--}}
+                        {{--<div class="blog-item-image news-image">--}}
+                            {{--<img src="{{URL::to('webassets/images/news/n_k.png')}}" alt="" />--}}
+                            {{--<div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 25.03.2017</div>--}}
 
-                        </div>
-                        <div class="blog-item-title"><h3><a href="news_4.php">Këshilla dermatologjike nga Dr.Spec. Nexhmije Kusari për emisionin Imazh në RTK</a></h3></div>
-                        <div class="blog-item-author"><a href="#"></a></div>
-                        <div class="blog-item-text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
-                        </div>
-                        <div class="blog-item-button"><a href="news_4.php" class="btn btn-primary-1">Më shumë</a></div>
-                    </div>
+                        {{--</div>--}}
+                        {{--<div class="blog-item-title"><h3><a href="news_4.php">Këshilla dermatologjike nga Dr.Spec. Nexhmije Kusari për emisionin Imazh në RTK</a></h3></div>--}}
+                        {{--<div class="blog-item-author"><a href="#"></a></div>--}}
+                        {{--<div class="blog-item-text">--}}
+                            {{--Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus--}}
+                        {{--</div>--}}
+                        {{--<div class="blog-item-button"><a href="news_4.php" class="btn btn-primary-1">Më shumë</a></div>--}}
+                    {{--</div>--}}
 
-                    <!-- BLOG ITEM -->
-                    <div class="blog-item news-item">
-                        <div class="blog-item-image news-image">
-                            <img src="{{URL::to('webassets/images/news/news_1.jpg')}}" alt="" />
-                            <div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 12.03.2017</div>
-                            <!--          <div class="blog-item-comments"><i class="fa fa-comments-o"></i> 12</div> -->
-                        </div>
-                        <div class="blog-item-title"><h3><a href="news_2.php">Lindja e Binjakëve</a></h3></div>
-                        <div class="blog-item-author"><a href="#"></a></div>
-                        <div class="blog-item-text">Familja Sylejmani pas dhjetë viteve pritje u gëzuan me ardhjen në jetë të binjakëve pranë Klinikës Amerikane.</div>
-                        <div class="blog-item-button"><a href="news_2.php" class="btn btn-primary-1">Më shumë</a></div>
-                    </div>
+                    {{--<!-- BLOG ITEM -->--}}
+                    {{--<div class="blog-item news-item">--}}
+                        {{--<div class="blog-item-image news-image">--}}
+                            {{--<img src="{{URL::to('webassets/images/news/news_1.jpg')}}" alt="" />--}}
+                            {{--<div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 12.03.2017</div>--}}
+                            {{--<!--          <div class="blog-item-comments"><i class="fa fa-comments-o"></i> 12</div> -->--}}
+                        {{--</div>--}}
+                        {{--<div class="blog-item-title"><h3><a href="news_2.php">Lindja e Binjakëve</a></h3></div>--}}
+                        {{--<div class="blog-item-author"><a href="#"></a></div>--}}
+                        {{--<div class="blog-item-text">Familja Sylejmani pas dhjetë viteve pritje u gëzuan me ardhjen në jetë të binjakëve pranë Klinikës Amerikane.</div>--}}
+                        {{--<div class="blog-item-button"><a href="news_2.php" class="btn btn-primary-1">Më shumë</a></div>--}}
+                    {{--</div>--}}
 
 
 
-                    <!-- BLOG ITEM -->
-                    <div class="blog-item news-item">
-                        <div class="blog-item-image news-image">
-                            <img src="{{URL::to('webassets/images/news/news_2.jpg')}}" alt="" />
-                            <div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 14.03.2017</div>
-                            <!--   <div class="blog-item-comments"><i class="fa fa-comments-o"></i> 7</div> -->
-                        </div>
-                        <div class="blog-item-title"><h3><a href="news_3.php">Lindja vogëlushit Kron</a></h3></div>
-                        <div class="blog-item-author"><a href="#"></a></div>
-                        <div class="blog-item-text">Familja Pllana u gëzua me ardhjen në jetë të vogëlushit të tyre Kroni.</div>
-                        <div class="blog-item-button"><a href="news_3.php" class="btn btn-primary-1">Më shumë</a></div>
-                    </div>
+                    {{--<!-- BLOG ITEM -->--}}
+                    {{--<div class="blog-item news-item">--}}
+                        {{--<div class="blog-item-image news-image">--}}
+                            {{--<img src="{{URL::to('webassets/images/news/news_2.jpg')}}" alt="" />--}}
+                            {{--<div class="blog-item-date data"><i class="fa fa-calendar-o"></i> 14.03.2017</div>--}}
+                            {{--<!--   <div class="blog-item-comments"><i class="fa fa-comments-o"></i> 7</div> -->--}}
+                        {{--</div>--}}
+                        {{--<div class="blog-item-title"><h3><a href="news_3.php">Lindja vogëlushit Kron</a></h3></div>--}}
+                        {{--<div class="blog-item-author"><a href="#"></a></div>--}}
+                        {{--<div class="blog-item-text">Familja Pllana u gëzua me ardhjen në jetë të vogëlushit të tyre Kroni.</div>--}}
+                        {{--<div class="blog-item-button"><a href="news_3.php" class="btn btn-primary-1">Më shumë</a></div>--}}
+                    {{--</div>--}}
 
                 </div>
                 <!-- BLOG BUTTONS -->

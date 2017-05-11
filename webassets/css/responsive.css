@@ -432,7 +432,7 @@ RESPONSIVE FIXES
     }
     .section-title {
         padding: 0 15px;
-        text-align: center !important;
+        text-align: center;
     }
     .owl-review2 .owl-controls {
         top: -29px;

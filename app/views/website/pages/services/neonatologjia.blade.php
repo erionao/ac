@@ -28,7 +28,7 @@
 <body data-spy="scroll" data-target=".navbar">
 
 <div class="preloader" id="preloader">
-    <img src="{{URL::to('webassets/images/preloader.gif')}}" alt="" />
+    <img src="{{URL::to('webassets/images/preloader1.gif')}}" alt="" />
 </div>
 
 <!-- =========================
@@ -131,7 +131,7 @@
                         </ul> -->
                     </li>
                     <li class="dropdown">
-                        <a id="latest_news" href="#">LAJMET E FUNDIT</a>
+                        <a href="{{ url('/') }}#ac_news">LAJMET E FUNDIT</a>
                         <!--  <ul class="dropdown-menu" role="menu">
                              <li><a href="blog1.html">Right sidebar</a></li>
                              <li><a href="blog2.html">Left sidebar</a></li>
@@ -172,7 +172,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header">
 
                 <!--   <h1 class="sp-layer col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header-title">we have <span>well trained staff</span> and <span>qualified</span></h1> -->
-                <img class="staff-img" src="{{URL::to('webassets/images/services/neonatologjia.png')}}">
+                <img class="staff-img" src="{{URL::to('webassets/images/services/neonatologjia1.png')}}">
 
 
             </div>
@@ -191,11 +191,7 @@
                 <h2 class="section-title titulli"><span class="bold700">Neonatologjia</span></h2>
                 <h3 class="qs-text">
 
-                    Fëmiu juaj i posalindur kërkon kujdes të veçantë në ditët e para të jetës, sidomos në rastet e lindjës së hershme ose para kohës së përfundimit të shtatzanisë normale. Neonatologjia është sub-specializim i pediatrisë e cila merret me përkujdesin e foshnjave të posalindura dhe foshnjave të lindura para kohës. <br><br>
-                    Nuk ka rëndësi se kur ju duhet ndihma apo konsulta e mjekut për fëmijën tuaj, nuk keni nevojë të brengoseni për kohën e vizitës, a është vikend apo gjatë natës. Në American Clinic mjekët tonë specialist të Pediatrisë dhe Neonatologjisë janë në krye të detyrës për përkujdesjen e fëmiut tuaj  gjatë 24 orëve në 7 ditët e javës, për të posa lindurit dhe deri në moshën 28 ditëshe (periudha e neonatusit) si dhe përcjelljen e shëndetit të fëmiut tuaj deri në moshën 6 vjeçare. <br><br>
-                    Me një ekip të përgaditur me standardet më të reja botërore të infermiereve, specialistëve Neonatolog e Pediatër dhe mjekë specialist të fushave tjera, fëmiu juaj do ta ketë përkujdesjen shëndetësore me standardet më të larta etike e mjekësore që nga lindja e deri në moshën 6 vjeçare <br><br>
-                    Njësia intenzive me reanimacion për të posalindurit është e paisur me aparaturen më modern si inkubator statik e transportues, CPAP-nazal bifazik për frymëmarrje artificiale, respiratorë statik e të lëvizshëm, të cilat e bëjnë repatin e Neonatologjisë të përkryer për përkujdesje të femiut tuaj të posalindur. <br><br>
-                    Me përkujdesje dhe dashuri fëmiu juaj do ta ketë mundësinë të zhvillohet si çdo fëmijë i botës.
+                    {{$sections->content}}
 
 
 

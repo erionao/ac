@@ -28,7 +28,7 @@
 <body data-spy="scroll" data-target=".navbar">
 
 <div class="preloader" id="preloader">
-    <img src="{{URL::to('webassets/images/preloader.gif')}}" alt="" />
+    <img src="{{URL::to('webassets/images/preloader1.gif')}}" alt="" />
 </div>
 
 <!-- =========================
@@ -131,7 +131,7 @@
                         </ul> -->
                     </li>
                     <li class="dropdown">
-                        <a id="latest_news" href="#">LAJMET E FUNDIT</a>
+                        <a href="{{ url('/') }}#ac_news">LAJMET E FUNDIT</a>
                         <!--  <ul class="dropdown-menu" role="menu">
                              <li><a href="blog1.html">Right sidebar</a></li>
                              <li><a href="blog2.html">Left sidebar</a></li>
@@ -171,7 +171,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header">
 
                 <!--   <h1 class="sp-layer col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header-title">we have <span>well trained staff</span> and <span>qualified</span></h1> -->
-                <img class="staff-img" src="{{URL::to('webassets/images/services/lindjet.png')}}">
+                <img class="staff-img" src="{{URL::to('webassets/images/services/lindjet1.png')}}">
 
 
             </div>
@@ -190,11 +190,7 @@
                 <h2 class="section-title titulli"><span class="bold700">Lindjet</span></h2>
                 <h3 class="qs-text">
 
-                    Të bëheni prind është një rol i madh që ju sjellë gëzim dhe harmoni familjare. Që nga momenti i lajmit të gëzimit, ju si prind filloni përgaditjet për familjen tuaj. Në fillim duheni të kujdeseni për shëndetin tuaj që të siguroheni se gjatë 38 javëve të shtatzanisë fëmiu juaj do të zhvillohet në mënyrë normale dhe të shëndetshme. Në American Clinic së bashku me stafin e trajnuar dhe mjekët specialist jemi këtu për të ju ndihmuar për këshilla dhe kontrolla 24 orë në ditë dhe 7 ditë në javë, që të ju ndihmojmë në udhëtimin e juaj të gëzimit familjar. <br><br>
-                    Kontrollat rutinore dhe analizat nga laboratoret tona të paisura me teknologjinë e fundit që nga pasqyra e gjakut e deri te analizat më të detajuara gjenetike do të ju mundësojnë një rrugëtim të lehtë dhe të shëndetshëm për Ju dhe fëmijën tuaj. E gjitha që ju mbetët juve si prindër është të përgaditeni për jetën tuaj familjare dhe ta gëzoni çdo ditë me njëri tjetrin. <br><br>
-                    Lindja është process natyral, njëjtë sikurse edhe shtatzania dhe proceset e ndryshme fiziologjike në trupin tuaj. Ne, në American Clinic kujdesemi që ju të keni një shtatzani normale e gjithashtu i inkurajojmë të gjitha nënat për lindje normale. Përparësitë e lindjes normale janë rikuperimi më i shpejtë i nënës dhe sipas disa studimeve fundit fëmija juaj do ta zhvillon sistemin e imunitetit më shpejtë. Lindja normale nganjëherë është më e mundimshme se ajo me prerje cezariane, mirëpo tani me zhvillimin e medicinës dhe anestezionit epidural lindja është më e lehtë dhe pa dhimbje. <br><br>
-                    Në rastet kur gjinekologu obstetër, për shkaqe shëndetësore, propozon lindje me prerje cezariane, pa marr parasysh kohën, ekipet tona të mjekëve specialist të fushave të ndryshme dhe stafi i infermiereve gjithmonë është i gatshëm për ndërhyrje kirurgjike. Blloku operativ kirurgjik është i paisur me teknologjinë e fundit të paisjeve kirurgjike, ndërsa dhomat e mbikqyrjes intenzive janë të paisura që ju të përqendroheni sa më shumë në rikuperimin tuaj.  <br><br>
-                    Për fund krejt cka ju duhet është ta përgaditni vetën për sfidat e reja familjare që ju bënë juve Prind.
+                    {{$sections->content}}
 
 
 

@@ -91,7 +91,11 @@
                 <div class="col-md-12 title_details_page">
                     <label>Title:</label>
                     <input type="" ng-model="blog.title" name="">
-                    <label>Content:</label>
+                    <label>Subtitle:</label>
+                    <input type="" ng-model="blog.subtitle" name="">
+                    <label>Youtube Link:</label>
+                    <input type="" ng-model="blog.youtube_link" name="">
+                    <label>Content of the Blog:</label>
                     <div ckeditor="options" ng-model="blog.content" ready="onReady()"></div>
 
                     <div class="col-md-6 " style="margin-top: 20px;">
@@ -99,18 +103,24 @@
                     </div>
 
                     <div class="col-md-6 " style="margin-top: 20px;">
-                        <button class="btn btn-success pull-right" data-toggle="modal" data-target="#myModal">Add Photos</button>
+                        <button class="btn btn-success pull-right" data-toggle="modal" data-target="#myModal" ng-disabled="blog.images.length > 0">Add Photos</button>
                     </div>
                 </div>
 
-                <div class="col-md-12 add_images_section_details">
+                <div class="col-md-6 add_images_section_details">
                     <h5>Blog Photo:</h5>
                     <div class="col-md-3 container" ng-repeat="image in blog.images">
-                        <img ng-src="{{URL::to('/uploads/blogs/')}}/<% image.image %>" class="image img-responsive" >
+                        <img ng-src="{{URL::to('/uploads/blogs/images/')}}/<% image.image %>" class="image img-responsive" >
                         <div class="middle">
                             <button class="btn btn-danger" ng-click="deleteImage(image.id)">Delete</button>
                         </div>
 
+                    </div>
+                </div>
+                <div class="col-md-6 add_images_section_details">
+                    <h5>Blog Video:</h5>
+                    <div class="col-md-3 container" ng-repeat="video in blog.videos">
+                        <video  ng-src="<%video.video | vidUrl %>" controls></video>
                     </div>
                 </div>
                 {{--<div class="col-md-6">--}}

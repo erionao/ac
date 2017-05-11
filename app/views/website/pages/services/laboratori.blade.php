@@ -28,7 +28,7 @@
 <body data-spy="scroll" data-target=".navbar">
 
 <div class="preloader" id="preloader">
-    <img src="{{URL::to('webassets/images/preloader.gif')}}" alt="" />
+    <img src="{{URL::to('webassets/images/preloader1.gif')}}" alt="" />
 </div>
 
 <!-- =========================
@@ -131,7 +131,7 @@
                         </ul> -->
                     </li>
                     <li class="dropdown">
-                        <a id="latest_news" href="#">LAJMET E FUNDIT</a>
+                        <a href="{{ url('/') }}#ac_news">LAJMET E FUNDIT</a>
                         <!--  <ul class="dropdown-menu" role="menu">
                              <li><a href="blog1.html">Right sidebar</a></li>
                              <li><a href="blog2.html">Left sidebar</a></li>
@@ -171,7 +171,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header">
 
                 <!--   <h1 class="sp-layer col-lg-12 col-md-12 col-sm-12 col-xs-12 staff-header-title">we have <span>well trained staff</span> and <span>qualified</span></h1> -->
-                <img class="staff-img" src="{{URL::to('webassets/images/services/laboratori.png')}}">
+                <img class="staff-img" src="{{URL::to('webassets/images/services/laboratori1.png')}}">
 
 
             </div>

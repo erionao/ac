@@ -16,7 +16,7 @@ class Section extends Migration {
 
 			$table->integer('id', true);
 			$table->string('name', 250);
-			$table->string('content', 2000)->nullable();
+			$table->string('content', 10000)->nullable();
 			$table->integer('page_id');
 
 			$table->foreign('page_id')->references('id')->on('page');

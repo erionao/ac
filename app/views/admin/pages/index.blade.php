@@ -116,7 +116,7 @@
                                 @foreach($galleries['gallery'] as $gallery)
                                 <div class="card card-outline-secondary mb-3 text-center card_galery">
                                         <blockquote class="card-blockquote">
-                                            <div class="row small_gallery_panel">
+                                            <div class="row ">
                                                 <div class="col-md-9">
                                                     <p>Image uploaded</p>
                                                 </div>

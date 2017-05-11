@@ -107,11 +107,9 @@ class PagesController extends \BaseController
     public function sectionsManjakos()
     {
         $sections = array(
-            'Home' => ['section1', 'section2', 'section3', 'section4', 'section5'],
-            'Catering' => ['section1', 'section2', 'section3', 'section4'],
-            'Consulting' =>['section1', 'section2', 'section3'],
-            'Chocolate' =>['section1', 'section2', 'section3'],
-            'Career' => ['section1', 'section2'],
+            'Home' => ['section1', 'section2', 'section3'],
+            'Klinika' => ['section1'],
+            'Sherbimet' => ['art', 'lindjet', 'gjinekologjia', 'dermatologjia', 'neonatologjia', 'L_Biokimik'],
             'Contact' => ['info']
 
         );

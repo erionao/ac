@@ -169,6 +169,7 @@ color: #b23594;
 .titulli {
 	text-align: left;
 	font-size: 40px;
+	text-align: left !important;
 }
 
 .news-titulli{
@@ -192,6 +193,12 @@ color: #b23594;
 }
 
 @media (max-width: 768px) {
+#color-sw-open-1 {
+	display: none;
+}
+.titulli{
+	font-size: 25px;
+}	
 
 .doctors-2 div div .qs-text{
 	padding: 0px 15px;

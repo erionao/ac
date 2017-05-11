@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" ng-app = "manjakos-landscape">
 
+<html lang="en" ng-app = "manjakos-landscape">
 <head>
 
     <meta charset="utf-8">
@@ -94,78 +94,16 @@
     <!-- Page Content -->
     <div id="page-wrapper" class="add_projects_page">
         <div class="container-fluid">
-            {{--<div class="row">--}}
-            {{--<div class="col-md-9 title_details_page">--}}
-            {{--<label>Title of the Project:</label>--}}
-            {{--<input type="" placeholder="Title" name="" ng-model="project.title" required>--}}
-            {{--<label for="sel1">Project Type:</label>--}}
-            {{--<select class="form-control"ng-model="project.type_id" >--}}
-            {{--<option ng-repeat="type in types" value="<%type.id%>"><%type.name%></option>--}}
-            {{--</select>--}}
-            {{--<label>Content of the Project:</label>--}}
-            {{--<div ckeditor="options" ng-model="project.content" ready="onReady()"></div>--}}
-
-            {{--<div class="col-md-12 " style="margin-top: 20px;">--}}
-            {{--<button class="edit_content_btn"  ng-click="saveProject(project)">Save</button> <button class="cancel_content_btn" >Cancel</button>--}}
-            {{--</div>--}}
-            {{--<table id="examples" class="display" cellspacing="0" width="100%">--}}
-            {{--<thead>--}}
-            {{--<tr>--}}
-            {{--<th>Name</th>--}}
-            {{--<th>Position</th>--}}
-            {{--<th>Office</th>--}}
-            {{--<th>Age</th>--}}
-            {{--<th>Start date</th>--}}
-            {{--<th>Salary</th>--}}
-            {{--</tr>--}}
-            {{--</thead>--}}
-            {{--<tbody>--}}
-            {{--<tr>--}}
-            {{--<td>Tiger Nixon</td>--}}
-            {{--<td>System Architect</td>--}}
-            {{--<td>Edinburgh</td>--}}
-            {{--<td>61</td>--}}
-            {{--<td>2011/04/25</td>--}}
-            {{--<td>$320,800</td>--}}
-            {{--</tr>--}}
-            {{--<tr>--}}
-            {{--<td>Donna Snider</td>--}}
-            {{--<td>Customer Support</td>--}}
-            {{--<td>New York</td>--}}
-            {{--<td>27</td>--}}
-            {{--<td>2011/01/25</td>--}}
-            {{--<td>$112,000</td>--}}
-            {{--</tr>--}}
-            {{--</tbody>--}}
-            {{--</table>--}}
-            {{--</div>--}}
-
-
-
-            {{--<div class="col-md-3 upload_buttons_add">--}}
-            {{--<div class="col-md-12 no_padding">--}}
-            {{--<label type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">--}}
-            {{--<i class="fa fa-file-image-o" aria-hidden="true"></i>&nbsp; Add Images--}}
-            {{--</label>--}}
-            {{--</div>--}}
-
-
-
-
-            {{--<div class="col-md-12 no_padding" ng-repeat="i in images">--}}
-            {{--<img ngf-src="i.files" class="img-rounded" width="400" height="100">--}}
-            {{--<button class="delete_btn"><i class="fa fa-trash" aria-hidden="true" ng-click="removeImage($index)" ></i></button>--}}
-            {{--</div>    --}}
-            {{--</div>--}}
-            {{--</div>--}}
-            {{--</div>--}}
-            {{--</div>--}}
 
 
             <div class="row">
                 <div class="col-md-12 title_details_page">
                     <label>Title:</label>
                     <input type="" ng-model="blog.title" name="">
+                    <label>Subtitle:</label>
+                    <input type="" ng-model="blog.subtitle" name="">
+                    <label>Youtube Link:</label>
+                    <input type="" ng-model="blog.youtube_link" name="">
                     <label>Content of the Blog:</label>
                     <div ckeditor="options" ng-model="blog.content" ready="onReady()"></div>
 
@@ -173,17 +111,32 @@
                         <button class="edit_content_btn" ng-click="saveBlog(blog)">Save</button> <button class="cancel_content_btn">Cancel</button>
                     </div>
 
-                    <div class="col-md-6 " style="margin-top: 20px;">
+                    <div class="col-md-6 btn-toolbar " style="margin-top: 20px;">
+
                         <button class="btn btn-success pull-right" data-toggle="modal" data-target="#myModal">Add Blog Photo</button>
+                        <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#videoModal">Add Blog Video</button>
+
                     </div>
+
                 </div>
 
-                <div class="col-md-12 add_images_section_details">
+                <div class="col-md-6 add_images_section_details">
                     <h5>Blog Photo:</h5>
                     <div class="col-md-3 container" ng-repeat="i in images">
                         <img ngf-src="i.files" class="image img-responsive" >
                         <div class="middle">
                             <button class="btn btn-danger" ng-click="removeImage($index)">Delete</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 add_images_section_details">
+                    <h5>Blog Video:</h5>
+                    <div class="col-md-3 container" ng-repeat="v in videos">
+                        <video controls ngf-src="v.videos"></video>
+                        <div >
+                            <button class="btn btn-danger" ng-click="removeVideos($index)">Delete</button>
                         </div>
 
                     </div>
@@ -224,6 +177,29 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button type="submit" id="flavicon" class="btn btn-primary" ng-click="saveImage(file)">Add</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="videoModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+
+            <div class="modal-body">
+                <input type="file" ngf-select="" ng-model="file" name="file" ngf-multiple="true" required="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" id="flavicon" class="btn btn-primary" ng-click="saveVideo(file)">Add</button>
             </div>
         </div>
 

@@ -17,7 +17,6 @@ class GallGallery extends Migration
 
 			$table->integer('id', true);
 			$table->string('image', 2000);
-			$table->enum('category', array('air', 'places'));
 
 			$table->timestamps();
 		});

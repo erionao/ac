@@ -2,6 +2,7 @@
 
 use App\models\Blog;
 use App\models\BlogImage;
+use App\models\BlogVideo;
 
 
 class BlogController extends \BaseController {
@@ -45,10 +46,17 @@ class BlogController extends \BaseController {
 	public function details($id)
 	{
 
-		$blog = Blog::findOrFail($id);
+		$blog = Blog::with('images')->findOrFail($id);
 
 		return \View::make('admin.pages.blog.details', array('blog'=> $blog));
 	}
+
+    public function detailsClient($id)
+    {
+        $blog = Blog::with('images')->findOrFail($id);
+
+        return \View::make('website.pages.blog.read', array('blog'=> $blog));
+    }
 
 
 	/**
@@ -58,30 +66,54 @@ class BlogController extends \BaseController {
 	 */
 	public function store()
 	{
+        ini_set('memory_limit','256M');
+
+
 		$blog = new Blog();
 		$blog->title = \Input::get('title');
+		$blog->subtitle = \Input::get('subtitle');
 		$blog->content = \Input::get('content');
-		$blog->image = 'sadsa';
+		$blog->youtube_link = \Input::get('youtube_link');
 
 		$blog->save();
 
-		$files = \Input::file('file');
+
+		$files = \Input::file('file')['images'];
+
 
 		foreach( $files as $file){
 			$image = new BlogImage();
 			$image->blog_id = $blog->id;
 
 
-			$destination = 'uploads/blogs/';
+			$destination = 'uploads/blogs/images/';
 			$imageName = str_random() . '.' . $file['files']->getClientOriginalExtension();
 
 //			$file['files']->move(public_path() . $destination, $imageName);
-			Image::make($file['files'])->resize(1200, 800)->save($destination.$imageName);
+            Image::make($file['files'])->save($destination.$imageName, 75);
 
 			$image->image = $imageName;
 
 			$image->save();
 		}
+
+//		if(array_key_exists('videos', \Input::file('file')['videos'])) {
+//            $videos = \Input::file('file')['videos'];
+//            foreach ($videos as $video) {
+//                $vid = new BlogVideo();
+//                $vid->blog_id = $blog->id;
+//
+//
+//                $destination = 'uploads/blogs/videos/';
+//                $videoName = str_random() . '.' . $video['videos']->getClientOriginalExtension();
+//                $video['videos']->move(public_path() . $destination, $videoName);
+//                // Image::make($file['files'])->resize(1200, 800)->save($destination.$imageName);
+//
+//                $vid->video = $videoName;
+//
+//                $vid->save();
+//            }
+//        }
 
 		return $blog;
 	}
@@ -95,7 +127,7 @@ class BlogController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$blog = Blog::with('images')->findOrFail($id);
+		$blog = Blog::with('images', 'videos')->findOrFail($id);
 
 		return $blog;
 	}
@@ -132,10 +164,10 @@ class BlogController extends \BaseController {
 
 		if($validator->passes()) {
 
-			$blog->title = \Input::get('title');
-			$blog->content = \Input::get('content');
-			$blog->image = 'test mode';
-
+            $blog->title = \Input::get('title');
+            $blog->subtitle = \Input::get('subtitle');
+            $blog->content = \Input::get('content');
+            $blog->youtube_link = \Input::get('youtube_link');
 
 			$blog->update();
 
@@ -169,6 +201,7 @@ class BlogController extends \BaseController {
 	}
 
 	public function addImage($blogId){
+        ini_set('memory_limit','256M');
 		$image = new BlogImage();
 
 		$image->blog_id = $blogId;

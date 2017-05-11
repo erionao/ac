@@ -28,7 +28,7 @@
 <body data-spy="scroll" data-target=".navbar">
 
 <div class="preloader" id="preloader">
-    <img src="{{URL::to('webassets/images/preloader.gif')}}" alt="" />
+    <img src="{{URL::to('webassets/images/preloader1.gif')}}" alt="" />
 </div>
 
 <!-- =========================
@@ -191,21 +191,7 @@
                 <h2 class="section-title titulli">Për <span class="bold700">klinikën</span></h2>
                 <h3 class="qs-text">
 
-                    Që nga viti 1996 nën udhëheqjen e Dr. Spec. Behar Kusari dhe përmes trajnimeve të stafit e zhvillimit të teknologjisë të paisur me aparaturën më të sofistikuar, jemi të përkushtuar të ju ndimojmë në sfidat e reja jetësore. Në fillim me trajtimin e infertilitetit femëror dhe mashkullor e tani edhe me trajtimet e dermatologjisë, me repartin e neonatologjisë bllokun operativ dhe bllokun e lindjeve. <br><br>
-
-                    Njësia e reprodukimit të asistuar përmban hapësira luksoze dekorative të pritjes, salla operative dhe laboratore bashkëkohore embriologjike dhe andrologjike. <br><br>
-
-                    Përkujdesja jonë profesionale e bënë American Clinic qendër të përkryer për shëndetin e femrës, me një ekip mjekësor vendor të udhëhequr nga Dr. Behar Kusari - Specialist Gjinekolog Obstetër- fertilarts si dhe në bashkëpunim me mjekë specialist ndërkombëtar. Stafi vendor dhe ai ndërkombëtar i American Clinic janë të specializuar në këtë lëmi, me një bagazh të arriturash që nga viti 1996. Njësia e udhëhequr nga Dr. spec. Behar Kusari funksionon si një ekip me përvojë i përbërë nga 2 gjinekolog , 2 embriolog, 2 teknik të embriologjisë dhe 1 androlog. Ndërsa personeli përkrahës përbëhet nga gjenetist, motrat medicinale të trajnuara me standarde të larta etike dhe profesionale shëndetësore. <br><br>
-
-                    Më 8 mars 2017, në dhjetë vjetorin e hapjes së klinkës për infertilitet dhe gjinekologji, i përuruam hapësirat e reja të spitalit special për gjinekologji, obstetrikë dhe infertilitet. Me një hapësirë të rehatshme dhe luksoze tani spitali special është i paisur me teknologjinë më moderne të sallave të lindjes dhe bllokut operativ për ndërhyrje të lindjeve me prerje cezariane. <br><br>
-
-                    Përveç kujdesit ndaj pacientëve ekipi i reprodukimit të asistuar të American Clinic është shumë aktiv në hulumtimet shkencore të publikuara në revistat shkencore me renome botërore. <br><br>
-
-                    Klinicistët, embriologët dhe stafi ynë është pjesëmarrës aktiv në kongrese dhe simpoziume shkencore Evropiane dhe Botërore. <br><br>
-
-                    American Clinic nuk na përket vetëm neve por edhe qindra bashkëshortëve që nuk kanë përjetuar ngrohtësinë e butë të frymëmarrjes së fëmijëve, krenarinë e shpirtit prindëror. Ne përpiqemi t'ua krijojmë qëllimin e jetës tuaj.
-
-
+                    {{$sections[0]->content}}
 
 
                 </h3> </div>

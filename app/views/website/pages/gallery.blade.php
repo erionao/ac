@@ -28,7 +28,7 @@
 <body data-spy="scroll" data-target=".navbar">
 
 <div class="preloader" id="preloader">
-    <img src="{{URL::to('webassets/images/preloader.gif')}}" alt="" />
+    <img src="{{URL::to('webassets/images/preloader1.gif')}}" alt="" />
 </div>
 
 <!-- =========================
@@ -171,10 +171,11 @@
 
             <div class="gallery-1-items" id="isotope-items" style="position: relative; height: 748px;">
 
+                @foreach($images as $image)
                 <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 0px; top: 0px;">
                     <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/1g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/1g.jpg')}}" class="fancybox">
+                        <img src="{{URL::to('uploads/gallery/'. $image->image)}}" alt="">
+                        <a href="{{URL::to('uploads/gallery/'. $image->image)}}" class="fancybox">
                             <div class="gallery-1-item-overlay">
                                 <i class="fa fa-plus"></i>
                             </div>
@@ -182,379 +183,382 @@
                     </div>
 
                 </div>
-
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 390px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/2g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/2g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 780px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/3g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/3g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 0px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/4g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/4g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/5g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/5g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/6g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/6g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 0px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/7g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/7g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 390px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/8g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/8g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 780px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/9g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/9g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 0px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/10g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/10g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/11g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/11g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/12g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/12g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
+                @endforeach
+            </div>
 
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 0px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/13g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/13g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 390px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/2g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/2g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 390px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/14g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/14g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 780px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/3g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/3g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 780px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/15g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/15g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 0px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/4g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/4g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 0px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/16g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/16g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/5g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/5g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/17g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/17g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/6g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/6g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/18g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/18g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 0px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/7g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/7g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 0px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/19g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/19g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 390px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/8g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/8g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 390px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/20g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/20g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 780px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/9g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/9g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 780px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/21g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/21g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 0px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/10g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/10g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 0px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/22g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/22g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/11g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/11g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/23g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/23g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/12g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/12g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/24g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/24g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
 
-                </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 0px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/13g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/13g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/25g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/25g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--</div>--}}
 
-                </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 390px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/14g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/14g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/26g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/26g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--</div>--}}
 
-                </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 780px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/15g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/15g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 0px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/27g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/27g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--</div>--}}
 
-                </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 0px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/16g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/16g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 390px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/28g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/28g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--</div>--}}
 
-                </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/17g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/17g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 780px; top: 0px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/29g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/29g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--</div>--}}
 
-                </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/18g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/18g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 0px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/30g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/30g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--</div>--}}
 
-                </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 0px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/19g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/19g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/31g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/31g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--</div>--}}
 
-                </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 390px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/20g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/20g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
 
-                <div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">
-                    <div class="gallery-1-item-image">
-                        <img src="{{URL::to('webassets/images/gallery/32g.jpg')}}" alt="">
-                        <a href="{{URL::to('webassets/images/gallery/32g.jpg')}}" class="fancybox">
-                            <div class="gallery-1-item-overlay">
-                                <i class="fa fa-plus"></i>
-                            </div>
-                        </a>
-                    </div>
+                {{--</div>--}}
 
-                </div>
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 780px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/21g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/21g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
+
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 0px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/22g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/22g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
+
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/23g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/23g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
+
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/24g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/24g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
+
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/25g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/25g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
+
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/26g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/26g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
+
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 0px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/27g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/27g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
+
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 390px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/28g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/28g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
+
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 success" style="position: absolute; left: 780px; top: 0px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/29g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/29g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
+
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 0px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/30g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/30g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
+
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat2" style="position: absolute; left: 390px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/31g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/31g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
+
+                {{--<div class="gallery-1-item isotope-item col-lg-4 col-md-4 col-sm-4 col-xs-12 cat1" style="position: absolute; left: 780px; top: 374px;">--}}
+                    {{--<div class="gallery-1-item-image">--}}
+                        {{--<img src="{{URL::to('webassets/images/gallery/32g.jpg')}}" alt="">--}}
+                        {{--<a href="{{URL::to('webassets/images/gallery/32g.jpg')}}" class="fancybox">--}}
+                            {{--<div class="gallery-1-item-overlay">--}}
+                                {{--<i class="fa fa-plus"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+
+                {{--</div>--}}
 
 
             </div>
