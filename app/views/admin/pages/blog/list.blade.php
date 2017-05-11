@@ -11,9 +11,12 @@
     <!-- Tab Logo -->
     <link rel="icon" href="img/es_logo.png">
 
-    <title>Emirates Graphic CMS</title>
+    <title>American Clinic CMS</title>
+
     <!-- Tab Logo -->
-    <link rel="icon" href="img/es_logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{URL::to('/webassets/icons/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{URL::to('/webassets/icons/favicon-16x16.png')}}">
+
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{URL::to('js/vendor/bootstrap/css/bootstrap.min.css')}}"/>
     <link rel="stylesheet" href="{{URL::to('js/vendor/metisMenu/metisMenu.min.css')}}"/>

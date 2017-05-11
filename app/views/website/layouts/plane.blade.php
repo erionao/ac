@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Nexlaw</title>
+    <title>American Clinic</title>
 
     <link rel="stylesheet" href="{{ asset("css/all.css") }}"/>
     <link rel="stylesheet" href="{{ asset("css/home.css") }}"/>
